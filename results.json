@@ -1,0 +1,706 @@
+{
+  "updated_at": "2026-10-29T06:36:43.887575+00:00",
+  "phase": "RULER",
+  "completed": 34,
+  "total": 112,
+  "ruler_completed": 6,
+  "ruler_total": 16,
+  "remaining": 78,
+  "rows": [
+    {
+      "model": "Qwen3-30B-A3B",
+      "configuration": "Baseline",
+      "weight_GB": 61.064245248,
+      "reduction_percent": 0.0,
+      "GSM8K": 0.9219105382865808,
+      "MMLU": null,
+      "MuSR": null,
+      "IFEval": 0.8317929759704251,
+      "HumanEval": null,
+      "BFCLv3": null,
+      "RULER": null,
+      "Avg.": null
+    },
+    {
+      "model": "Qwen3-30B-A3B",
+      "configuration": "E",
+      "weight_GB": 46.562439168,
+      "reduction_percent": 23.748440713716946,
+      "GSM8K": null,
+      "MMLU": null,
+      "MuSR": null,
+      "IFEval": null,
+      "HumanEval": null,
+      "BFCLv3": null,
+      "RULER": null,
+      "Avg.": null
+    },
+    {
+      "model": "Qwen3-30B-A3B",
+      "configuration": "W",
+      "weight_GB": null,
+      "reduction_percent": null,
+      "GSM8K": null,
+      "MMLU": null,
+      "MuSR": null,
+      "IFEval": null,
+      "HumanEval": null,
+      "BFCLv3": null,
+      "RULER": null,
+      "Avg.": null
+    },
+    {
+      "model": "Qwen3-30B-A3B",
+      "configuration": "KV",
+      "weight_GB": 61.064245248,
+      "reduction_percent": 0.0,
+      "GSM8K": 0.9219105382865808,
+      "MMLU": 0.8092152115083322,
+      "MuSR": 0.40343915343915343,
+      "IFEval": 0.8243992606284658,
+      "HumanEval": 0.9329268292682927,
+      "BFCLv3": 0.6668498938743275,
+      "RULER": 0.936248717948718,
+      "Avg.": 0.7849985149934101
+    },
+    {
+      "model": "Qwen3-30B-A3B",
+      "configuration": "W+KV",
+      "weight_GB": null,
+      "reduction_percent": null,
+      "GSM8K": null,
+      "MMLU": null,
+      "MuSR": null,
+      "IFEval": null,
+      "HumanEval": null,
+      "BFCLv3": null,
+      "RULER": null,
+      "Avg.": null
+    },
+    {
+      "model": "Qwen3-30B-A3B",
+      "configuration": "E+KV",
+      "weight_GB": 46.562439168,
+      "reduction_percent": 23.748440713716946,
+      "GSM8K": 0.931008339651251,
+      "MMLU": 0.7024640364620425,
+      "MuSR": 0.40476190476190477,
+      "IFEval": 0.7929759704251387,
+      "HumanEval": 0.7987804878048781,
+      "BFCLv3": 0.6309933239547855,
+      "RULER": 0.9345846153846153,
+      "Avg.": 0.7422240969206594
+    },
+    {
+      "model": "Qwen3-30B-A3B",
+      "configuration": "E+W",
+      "weight_GB": 13.992395328,
+      "reduction_percent": 77.08578027752127,
+      "GSM8K": null,
+      "MMLU": null,
+      "MuSR": null,
+      "IFEval": null,
+      "HumanEval": null,
+      "BFCLv3": null,
+      "RULER": null,
+      "Avg.": null
+    },
+    {
+      "model": "Qwen3-30B-A3B",
+      "configuration": "E+W+KV",
+      "weight_GB": 13.992395328,
+      "reduction_percent": 77.08578027752127,
+      "GSM8K": null,
+      "MMLU": null,
+      "MuSR": null,
+      "IFEval": null,
+      "HumanEval": null,
+      "BFCLv3": null,
+      "RULER": 0.9274897435897436,
+      "Avg.": null
+    },
+    {
+      "model": "Qwen3.6-35B-A3B",
+      "configuration": "Baseline",
+      "weight_GB": 69.321223296,
+      "reduction_percent": 0.0,
+      "GSM8K": 0.9598180439727066,
+      "MMLU": null,
+      "MuSR": null,
+      "IFEval": 0.8280961182994455,
+      "HumanEval": null,
+      "BFCLv3": null,
+      "RULER": null,
+      "Avg.": null
+    },
+    {
+      "model": "Qwen3.6-35B-A3B",
+      "configuration": "E",
+      "weight_GB": 56.478297216,
+      "reduction_percent": 18.52668702218512,
+      "GSM8K": null,
+      "MMLU": null,
+      "MuSR": null,
+      "IFEval": null,
+      "HumanEval": null,
+      "BFCLv3": null,
+      "RULER": null,
+      "Avg.": null
+    },
+    {
+      "model": "Qwen3.6-35B-A3B",
+      "configuration": "W",
+      "weight_GB": null,
+      "reduction_percent": null,
+      "GSM8K": null,
+      "MMLU": null,
+      "MuSR": null,
+      "IFEval": null,
+      "HumanEval": null,
+      "BFCLv3": null,
+      "RULER": null,
+      "Avg.": null
+    },
+    {
+      "model": "Qwen3.6-35B-A3B",
+      "configuration": "KV",
+      "weight_GB": 69.321223296,
+      "reduction_percent": 0.0,
+      "GSM8K": 0.9605761940864291,
+      "MMLU": 0.8433271613730238,
+      "MuSR": 0.42724867724867727,
+      "IFEval": 0.8502772643253235,
+      "HumanEval": 0.9634146341463414,
+      "BFCLv3": 0.690819944222321,
+      "RULER": 0.9458358974358975,
+      "Avg.": 0.8116428246911448
+    },
+    {
+      "model": "Qwen3.6-35B-A3B",
+      "configuration": "W+KV",
+      "weight_GB": null,
+      "reduction_percent": null,
+      "GSM8K": null,
+      "MMLU": null,
+      "MuSR": null,
+      "IFEval": null,
+      "HumanEval": null,
+      "BFCLv3": null,
+      "RULER": null,
+      "Avg.": null
+    },
+    {
+      "model": "Qwen3.6-35B-A3B",
+      "configuration": "E+KV",
+      "weight_GB": 56.478297216,
+      "reduction_percent": 18.52668702218512,
+      "GSM8K": 0.9598180439727066,
+      "MMLU": 0.8265916536105968,
+      "MuSR": 0.4351851851851852,
+      "IFEval": 0.8040665434380776,
+      "HumanEval": 0.9451219512195121,
+      "BFCLv3": 0.6825885285552099,
+      "RULER": 0.9452820512820513,
+      "Avg.": 0.7998077081804772
+    },
+    {
+      "model": "Qwen3.6-35B-A3B",
+      "configuration": "E+W",
+      "weight_GB": 17.372622776,
+      "reduction_percent": 74.93895527229907,
+      "GSM8K": null,
+      "MMLU": null,
+      "MuSR": null,
+      "IFEval": null,
+      "HumanEval": null,
+      "BFCLv3": null,
+      "RULER": null,
+      "Avg.": null
+    },
+    {
+      "model": "Qwen3.6-35B-A3B",
+      "configuration": "E+W+KV",
+      "weight_GB": 17.372622776,
+      "reduction_percent": 74.93895527229907,
+      "GSM8K": null,
+      "MMLU": null,
+      "MuSR": null,
+      "IFEval": null,
+      "HumanEval": null,
+      "BFCLv3": null,
+      "RULER": 0.9463153846153846,
+      "Avg.": null
+    }
+  ],
+  "pending": [
+    {
+      "id": "qwen3_30b--Baseline--MMLU",
+      "model": "qwen3_30b",
+      "configuration": "Baseline",
+      "workload": "MMLU"
+    },
+    {
+      "id": "qwen3_30b--Baseline--MuSR",
+      "model": "qwen3_30b",
+      "configuration": "Baseline",
+      "workload": "MuSR"
+    },
+    {
+      "id": "qwen3_30b--Baseline--HumanEval",
+      "model": "qwen3_30b",
+      "configuration": "Baseline",
+      "workload": "HumanEval"
+    },
+    {
+      "id": "qwen3_30b--Baseline--BFCLv3",
+      "model": "qwen3_30b",
+      "configuration": "Baseline",
+      "workload": "BFCLv3"
+    },
+    {
+      "id": "qwen3_30b--Baseline--RULER",
+      "model": "qwen3_30b",
+      "configuration": "Baseline",
+      "workload": "RULER"
+    },
+    {
+      "id": "qwen3_30b--E--GSM8K",
+      "model": "qwen3_30b",
+      "configuration": "E",
+      "workload": "GSM8K"
+    },
+    {
+      "id": "qwen3_30b--E--MMLU",
+      "model": "qwen3_30b",
+      "configuration": "E",
+      "workload": "MMLU"
+    },
+    {
+      "id": "qwen3_30b--E--MuSR",
+      "model": "qwen3_30b",
+      "configuration": "E",
+      "workload": "MuSR"
+    },
+    {
+      "id": "qwen3_30b--E--IFEval",
+      "model": "qwen3_30b",
+      "configuration": "E",
+      "workload": "IFEval"
+    },
+    {
+      "id": "qwen3_30b--E--HumanEval",
+      "model": "qwen3_30b",
+      "configuration": "E",
+      "workload": "HumanEval"
+    },
+    {
+      "id": "qwen3_30b--E--BFCLv3",
+      "model": "qwen3_30b",
+      "configuration": "E",
+      "workload": "BFCLv3"
+    },
+    {
+      "id": "qwen3_30b--E--RULER",
+      "model": "qwen3_30b",
+      "configuration": "E",
+      "workload": "RULER"
+    },
+    {
+      "id": "qwen3_30b--W--GSM8K",
+      "model": "qwen3_30b",
+      "configuration": "W",
+      "workload": "GSM8K"
+    },
+    {
+      "id": "qwen3_30b--W--MMLU",
+      "model": "qwen3_30b",
+      "configuration": "W",
+      "workload": "MMLU"
+    },
+    {
+      "id": "qwen3_30b--W--MuSR",
+      "model": "qwen3_30b",
+      "configuration": "W",
+      "workload": "MuSR"
+    },
+    {
+      "id": "qwen3_30b--W--IFEval",
+      "model": "qwen3_30b",
+      "configuration": "W",
+      "workload": "IFEval"
+    },
+    {
+      "id": "qwen3_30b--W--HumanEval",
+      "model": "qwen3_30b",
+      "configuration": "W",
+      "workload": "HumanEval"
+    },
+    {
+      "id": "qwen3_30b--W--BFCLv3",
+      "model": "qwen3_30b",
+      "configuration": "W",
+      "workload": "BFCLv3"
+    },
+    {
+      "id": "qwen3_30b--W--RULER",
+      "model": "qwen3_30b",
+      "configuration": "W",
+      "workload": "RULER"
+    },
+    {
+      "id": "qwen3_30b--W+KV--GSM8K",
+      "model": "qwen3_30b",
+      "configuration": "W+KV",
+      "workload": "GSM8K"
+    },
+    {
+      "id": "qwen3_30b--W+KV--MMLU",
+      "model": "qwen3_30b",
+      "configuration": "W+KV",
+      "workload": "MMLU"
+    },
+    {
+      "id": "qwen3_30b--W+KV--MuSR",
+      "model": "qwen3_30b",
+      "configuration": "W+KV",
+      "workload": "MuSR"
+    },
+    {
+      "id": "qwen3_30b--W+KV--IFEval",
+      "model": "qwen3_30b",
+      "configuration": "W+KV",
+      "workload": "IFEval"
+    },
+    {
+      "id": "qwen3_30b--W+KV--HumanEval",
+      "model": "qwen3_30b",
+      "configuration": "W+KV",
+      "workload": "HumanEval"
+    },
+    {
+      "id": "qwen3_30b--W+KV--BFCLv3",
+      "model": "qwen3_30b",
+      "configuration": "W+KV",
+      "workload": "BFCLv3"
+    },
+    {
+      "id": "qwen3_30b--W+KV--RULER",
+      "model": "qwen3_30b",
+      "configuration": "W+KV",
+      "workload": "RULER"
+    },
+    {
+      "id": "qwen3_30b--E+W--GSM8K",
+      "model": "qwen3_30b",
+      "configuration": "E+W",
+      "workload": "GSM8K"
+    },
+    {
+      "id": "qwen3_30b--E+W--MMLU",
+      "model": "qwen3_30b",
+      "configuration": "E+W",
+      "workload": "MMLU"
+    },
+    {
+      "id": "qwen3_30b--E+W--MuSR",
+      "model": "qwen3_30b",
+      "configuration": "E+W",
+      "workload": "MuSR"
+    },
+    {
+      "id": "qwen3_30b--E+W--IFEval",
+      "model": "qwen3_30b",
+      "configuration": "E+W",
+      "workload": "IFEval"
+    },
+    {
+      "id": "qwen3_30b--E+W--HumanEval",
+      "model": "qwen3_30b",
+      "configuration": "E+W",
+      "workload": "HumanEval"
+    },
+    {
+      "id": "qwen3_30b--E+W--BFCLv3",
+      "model": "qwen3_30b",
+      "configuration": "E+W",
+      "workload": "BFCLv3"
+    },
+    {
+      "id": "qwen3_30b--E+W--RULER",
+      "model": "qwen3_30b",
+      "configuration": "E+W",
+      "workload": "RULER"
+    },
+    {
+      "id": "qwen3_30b--E+W+KV--GSM8K",
+      "model": "qwen3_30b",
+      "configuration": "E+W+KV",
+      "workload": "GSM8K"
+    },
+    {
+      "id": "qwen3_30b--E+W+KV--MMLU",
+      "model": "qwen3_30b",
+      "configuration": "E+W+KV",
+      "workload": "MMLU"
+    },
+    {
+      "id": "qwen3_30b--E+W+KV--MuSR",
+      "model": "qwen3_30b",
+      "configuration": "E+W+KV",
+      "workload": "MuSR"
+    },
+    {
+      "id": "qwen3_30b--E+W+KV--IFEval",
+      "model": "qwen3_30b",
+      "configuration": "E+W+KV",
+      "workload": "IFEval"
+    },
+    {
+      "id": "qwen3_30b--E+W+KV--HumanEval",
+      "model": "qwen3_30b",
+      "configuration": "E+W+KV",
+      "workload": "HumanEval"
+    },
+    {
+      "id": "qwen3_30b--E+W+KV--BFCLv3",
+      "model": "qwen3_30b",
+      "configuration": "E+W+KV",
+      "workload": "BFCLv3"
+    },
+    {
+      "id": "qwen3_6_35b--Baseline--MMLU",
+      "model": "qwen3_6_35b",
+      "configuration": "Baseline",
+      "workload": "MMLU"
+    },
+    {
+      "id": "qwen3_6_35b--Baseline--MuSR",
+      "model": "qwen3_6_35b",
+      "configuration": "Baseline",
+      "workload": "MuSR"
+    },
+    {
+      "id": "qwen3_6_35b--Baseline--HumanEval",
+      "model": "qwen3_6_35b",
+      "configuration": "Baseline",
+      "workload": "HumanEval"
+    },
+    {
+      "id": "qwen3_6_35b--Baseline--BFCLv3",
+      "model": "qwen3_6_35b",
+      "configuration": "Baseline",
+      "workload": "BFCLv3"
+    },
+    {
+      "id": "qwen3_6_35b--Baseline--RULER",
+      "model": "qwen3_6_35b",
+      "configuration": "Baseline",
+      "workload": "RULER"
+    },
+    {
+      "id": "qwen3_6_35b--E--GSM8K",
+      "model": "qwen3_6_35b",
+      "configuration": "E",
+      "workload": "GSM8K"
+    },
+    {
+      "id": "qwen3_6_35b--E--MMLU",
+      "model": "qwen3_6_35b",
+      "configuration": "E",
+      "workload": "MMLU"
+    },
+    {
+      "id": "qwen3_6_35b--E--MuSR",
+      "model": "qwen3_6_35b",
+      "configuration": "E",
+      "workload": "MuSR"
+    },
+    {
+      "id": "qwen3_6_35b--E--IFEval",
+      "model": "qwen3_6_35b",
+      "configuration": "E",
+      "workload": "IFEval"
+    },
+    {
+      "id": "qwen3_6_35b--E--HumanEval",
+      "model": "qwen3_6_35b",
+      "configuration": "E",
+      "workload": "HumanEval"
+    },
+    {
+      "id": "qwen3_6_35b--E--BFCLv3",
+      "model": "qwen3_6_35b",
+      "configuration": "E",
+      "workload": "BFCLv3"
+    },
+    {
+      "id": "qwen3_6_35b--E--RULER",
+      "model": "qwen3_6_35b",
+      "configuration": "E",
+      "workload": "RULER"
+    },
+    {
+      "id": "qwen3_6_35b--W--GSM8K",
+      "model": "qwen3_6_35b",
+      "configuration": "W",
+      "workload": "GSM8K"
+    },
+    {
+      "id": "qwen3_6_35b--W--MMLU",
+      "model": "qwen3_6_35b",
+      "configuration": "W",
+      "workload": "MMLU"
+    },
+    {
+      "id": "qwen3_6_35b--W--MuSR",
+      "model": "qwen3_6_35b",
+      "configuration": "W",
+      "workload": "MuSR"
+    },
+    {
+      "id": "qwen3_6_35b--W--IFEval",
+      "model": "qwen3_6_35b",
+      "configuration": "W",
+      "workload": "IFEval"
+    },
+    {
+      "id": "qwen3_6_35b--W--HumanEval",
+      "model": "qwen3_6_35b",
+      "configuration": "W",
+      "workload": "HumanEval"
+    },
+    {
+      "id": "qwen3_6_35b--W--BFCLv3",
+      "model": "qwen3_6_35b",
+      "configuration": "W",
+      "workload": "BFCLv3"
+    },
+    {
+      "id": "qwen3_6_35b--W--RULER",
+      "model": "qwen3_6_35b",
+      "configuration": "W",
+      "workload": "RULER"
+    },
+    {
+      "id": "qwen3_6_35b--W+KV--GSM8K",
+      "model": "qwen3_6_35b",
+      "configuration": "W+KV",
+      "workload": "GSM8K"
+    },
+    {
+      "id": "qwen3_6_35b--W+KV--MMLU",
+      "model": "qwen3_6_35b",
+      "configuration": "W+KV",
+      "workload": "MMLU"
+    },
+    {
+      "id": "qwen3_6_35b--W+KV--MuSR",
+      "model": "qwen3_6_35b",
+      "configuration": "W+KV",
+      "workload": "MuSR"
+    },
+    {
+      "id": "qwen3_6_35b--W+KV--IFEval",
+      "model": "qwen3_6_35b",
+      "configuration": "W+KV",
+      "workload": "IFEval"
+    },
+    {
+      "id": "qwen3_6_35b--W+KV--HumanEval",
+      "model": "qwen3_6_35b",
+      "configuration": "W+KV",
+      "workload": "HumanEval"
+    },
+    {
+      "id": "qwen3_6_35b--W+KV--BFCLv3",
+      "model": "qwen3_6_35b",
+      "configuration": "W+KV",
+      "workload": "BFCLv3"
+    },
+    {
+      "id": "qwen3_6_35b--W+KV--RULER",
+      "model": "qwen3_6_35b",
+      "configuration": "W+KV",
+      "workload": "RULER"
+    },
+    {
+      "id": "qwen3_6_35b--E+W--GSM8K",
+      "model": "qwen3_6_35b",
+      "configuration": "E+W",
+      "workload": "GSM8K"
+    },
+    {
+      "id": "qwen3_6_35b--E+W--MMLU",
+      "model": "qwen3_6_35b",
+      "configuration": "E+W",
+      "workload": "MMLU"
+    },
+    {
+      "id": "qwen3_6_35b--E+W--MuSR",
+      "model": "qwen3_6_35b",
+      "configuration": "E+W",
+      "workload": "MuSR"
+    },
+    {
+      "id": "qwen3_6_35b--E+W--IFEval",
+      "model": "qwen3_6_35b",
+      "configuration": "E+W",
+      "workload": "IFEval"
+    },
+    {
+      "id": "qwen3_6_35b--E+W--HumanEval",
+      "model": "qwen3_6_35b",
+      "configuration": "E+W",
+      "workload": "HumanEval"
+    },
+    {
+      "id": "qwen3_6_35b--E+W--BFCLv3",
+      "model": "qwen3_6_35b",
+      "configuration": "E+W",
+      "workload": "BFCLv3"
+    },
+    {
+      "id": "qwen3_6_35b--E+W--RULER",
+      "model": "qwen3_6_35b",
+      "configuration": "E+W",
+      "workload": "RULER"
+    },
+    {
+      "id": "qwen3_6_35b--E+W+KV--GSM8K",
+      "model": "qwen3_6_35b",
+      "configuration": "E+W+KV",
+      "workload": "GSM8K"
+    },
+    {
+      "id": "qwen3_6_35b--E+W+KV--MMLU",
+      "model": "qwen3_6_35b",
+      "configuration": "E+W+KV",
+      "workload": "MMLU"
+    },
+    {
+      "id": "qwen3_6_35b--E+W+KV--MuSR",
+      "model": "qwen3_6_35b",
+      "configuration": "E+W+KV",
+      "workload": "MuSR"
+    },
+    {
+      "id": "qwen3_6_35b--E+W+KV--IFEval",
+      "model": "qwen3_6_35b",
+      "configuration": "E+W+KV",
+      "workload": "IFEval"
+    },
+    {
+      "id": "qwen3_6_35b--E+W+KV--HumanEval",
+      "model": "qwen3_6_35b",
+      "configuration": "E+W+KV",
+      "workload": "HumanEval"
+    },
+    {
+      "id": "qwen3_6_35b--E+W+KV--BFCLv3",
+      "model": "qwen3_6_35b",
+      "configuration": "E+W+KV",
+      "workload": "BFCLv3"
+    }
+  ],
+  "issues": []
+}

@@ -1,0 +1,360 @@
+{
+  "schema_version": 1,
+  "models": {
+    "qwen3_30b": {
+      "label": "Qwen3-30B-A3B",
+      "family": 0,
+      "base": {
+        "repo": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+        "revision": "0d7cf23991f47feeb3a57ecb4c9cee8ea4a17bfe",
+        "experts": 128
+      },
+      "reap": {
+        "repo": "SamsungSAILMontreal/Qwen3-30B-A3B-Instruct-2507-REAP",
+        "revision": "2bcac44cc13882aac24142e524cc5ce12f0900c1",
+        "experts": 96
+      },
+      "pruning_fraction": 0.25,
+      "layers": 48,
+      "weight_bytes": {
+        "bf16_base": 61064245248,
+        "bf16_reap": 46562439168,
+        "nvfp4_base": 18069271104,
+        "nvfp4_reap": 13992395328
+      }
+    },
+    "qwen3_6_35b": {
+      "label": "Qwen3.6-35B-A3B",
+      "family": 1,
+      "base": {
+        "repo": "Qwen/Qwen3.6-35B-A3B",
+        "revision": "995ad96eacd98c81ed38be0c5b274b04031597b0",
+        "experts": 256
+      },
+      "reap": {
+        "repo": "RangerX/Qwen3.6-35B-REAP-Pruned-ratio-0.2",
+        "revision": "3df0df7fcc715b6b1e59d4a61bebf101dad2d676",
+        "experts": 205
+      },
+      "pruning_fraction": 0.2,
+      "layers": 40,
+      "weight_bytes": {
+        "bf16_base": 69321223296,
+        "bf16_reap": 56478297216,
+        "nvfp4_base": 20990717816,
+        "nvfp4_reap": 17372622776
+      }
+    }
+  },
+  "configurations": {
+    "Baseline": {
+      "expert": false,
+      "weights": "bf16",
+      "kv": "bf16"
+    },
+    "E": {
+      "expert": true,
+      "weights": "bf16",
+      "kv": "bf16"
+    },
+    "W": {
+      "expert": false,
+      "weights": "nvfp4",
+      "kv": "bf16"
+    },
+    "KV": {
+      "expert": false,
+      "weights": "bf16",
+      "kv": "fp8"
+    },
+    "W+KV": {
+      "expert": false,
+      "weights": "nvfp4",
+      "kv": "fp8"
+    },
+    "E+KV": {
+      "expert": true,
+      "weights": "bf16",
+      "kv": "fp8"
+    },
+    "E+W": {
+      "expert": true,
+      "weights": "nvfp4",
+      "kv": "bf16"
+    },
+    "E+W+KV": {
+      "expert": true,
+      "weights": "nvfp4",
+      "kv": "fp8"
+    }
+  },
+  "workloads": {
+    "GSM8K": {
+      "task": "gsm8k_cot",
+      "metric": "exact_match,flexible-extract",
+      "sample_counts": {
+        "gsm8k_cot": 2638
+      },
+      "context_capacity": 32768,
+      "ruler_total_tokens": null,
+      "task_config_digest_by_model": {
+        "qwen3_30b": "43be7ec90a17c99fb787149c499791781c8c31d44abc57c358f7d33434b3bf2e",
+        "qwen3_6_35b": "43be7ec90a17c99fb787149c499791781c8c31d44abc57c358f7d33434b3bf2e"
+      }
+    },
+    "MMLU": {
+      "task": "mmlu",
+      "metric": "acc,none",
+      "sample_counts": {
+        "mmlu_abstract_algebra": 100,
+        "mmlu_anatomy": 135,
+        "mmlu_astronomy": 152,
+        "mmlu_college_biology": 144,
+        "mmlu_college_chemistry": 100,
+        "mmlu_college_computer_science": 100,
+        "mmlu_college_mathematics": 100,
+        "mmlu_college_physics": 102,
+        "mmlu_computer_security": 100,
+        "mmlu_conceptual_physics": 235,
+        "mmlu_electrical_engineering": 145,
+        "mmlu_elementary_mathematics": 378,
+        "mmlu_high_school_biology": 310,
+        "mmlu_high_school_chemistry": 203,
+        "mmlu_high_school_computer_science": 100,
+        "mmlu_high_school_mathematics": 270,
+        "mmlu_high_school_physics": 151,
+        "mmlu_high_school_statistics": 216,
+        "mmlu_machine_learning": 112,
+        "mmlu_business_ethics": 100,
+        "mmlu_clinical_knowledge": 265,
+        "mmlu_college_medicine": 173,
+        "mmlu_global_facts": 100,
+        "mmlu_human_aging": 223,
+        "mmlu_management": 103,
+        "mmlu_marketing": 234,
+        "mmlu_medical_genetics": 100,
+        "mmlu_miscellaneous": 783,
+        "mmlu_nutrition": 306,
+        "mmlu_professional_accounting": 282,
+        "mmlu_professional_medicine": 272,
+        "mmlu_virology": 166,
+        "mmlu_econometrics": 114,
+        "mmlu_high_school_geography": 198,
+        "mmlu_high_school_government_and_politics": 193,
+        "mmlu_high_school_macroeconomics": 390,
+        "mmlu_high_school_microeconomics": 238,
+        "mmlu_high_school_psychology": 545,
+        "mmlu_human_sexuality": 131,
+        "mmlu_professional_psychology": 612,
+        "mmlu_public_relations": 110,
+        "mmlu_security_studies": 245,
+        "mmlu_sociology": 201,
+        "mmlu_us_foreign_policy": 100,
+        "mmlu_formal_logic": 126,
+        "mmlu_high_school_european_history": 165,
+        "mmlu_high_school_us_history": 204,
+        "mmlu_high_school_world_history": 237,
+        "mmlu_international_law": 121,
+        "mmlu_jurisprudence": 108,
+        "mmlu_logical_fallacies": 163,
+        "mmlu_moral_disputes": 346,
+        "mmlu_moral_scenarios": 895,
+        "mmlu_philosophy": 311,
+        "mmlu_prehistory": 324,
+        "mmlu_professional_law": 1534,
+        "mmlu_world_religions": 171
+      },
+      "context_capacity": 32768,
+      "ruler_total_tokens": null,
+      "task_config_digest_by_model": {
+        "qwen3_30b": "b4b1293a9873c7fe161973694258fedb467fcc26912969ea8e51cd6bae558fc4",
+        "qwen3_6_35b": "b4b1293a9873c7fe161973694258fedb467fcc26912969ea8e51cd6bae558fc4"
+      }
+    },
+    "MuSR": {
+      "task": "leaderboard_musr",
+      "metric": "acc_norm,none",
+      "sample_counts": {
+        "leaderboard_musr_murder_mysteries": 250,
+        "leaderboard_musr_object_placements": 256,
+        "leaderboard_musr_team_allocation": 250
+      },
+      "context_capacity": 32768,
+      "ruler_total_tokens": null,
+      "task_config_digest_by_model": {
+        "qwen3_30b": "2ed0bff5e38eb6700a71f1c3801b1386843210b38933f59cb686cc0e6c5f85c2",
+        "qwen3_6_35b": "2ed0bff5e38eb6700a71f1c3801b1386843210b38933f59cb686cc0e6c5f85c2"
+      }
+    },
+    "IFEval": {
+      "task": "ifeval",
+      "metric": "prompt_level_strict_acc,none",
+      "sample_counts": {
+        "ifeval": 541
+      },
+      "context_capacity": 32768,
+      "ruler_total_tokens": null,
+      "task_config_digest_by_model": {
+        "qwen3_30b": "7554a2f511c9850ed828b5c7ab34998776b33024b46bf440dbd6473fa69a1eae",
+        "qwen3_6_35b": "7554a2f511c9850ed828b5c7ab34998776b33024b46bf440dbd6473fa69a1eae"
+      }
+    },
+    "HumanEval": {
+      "task": "humaneval_instruct",
+      "metric": "pass@1,create_test",
+      "sample_counts": {
+        "humaneval_instruct": 164
+      },
+      "context_capacity": 32768,
+      "ruler_total_tokens": null,
+      "task_config_digest_by_model": {
+        "qwen3_30b": "5a1ffe4e04d0049e097d69d2dd50022d729395f35063a317b33ae198855db007",
+        "qwen3_6_35b": "5a1ffe4e04d0049e097d69d2dd50022d729395f35063a317b33ae198855db007"
+      }
+    },
+    "BFCLv3": {
+      "task": "bfcl_v3",
+      "metric": "acc,none",
+      "sample_counts": {
+        "multi_turn_miss_param": 200,
+        "parallel_multiple": 200,
+        "multi_turn_long_context": 200,
+        "parallel": 200,
+        "live_irrelevance": 882,
+        "javascript": 50,
+        "live_parallel": 16,
+        "multiple": 200,
+        "live_multiple": 1053,
+        "java": 100,
+        "live_parallel_multiple": 24,
+        "multi_turn_base": 200,
+        "live_relevance": 18,
+        "simple": 400,
+        "multi_turn_miss_func": 200,
+        "irrelevance": 240,
+        "live_simple": 258
+      },
+      "context_capacity": 131072,
+      "ruler_total_tokens": null,
+      "expected_counts": {
+        "irrelevance": 240,
+        "java": 100,
+        "javascript": 50,
+        "live_irrelevance": 882,
+        "live_multiple": 1053,
+        "live_parallel": 16,
+        "live_parallel_multiple": 24,
+        "live_relevance": 18,
+        "live_simple": 258,
+        "multi_turn_base": 200,
+        "multi_turn_long_context": 200,
+        "multi_turn_miss_func": 200,
+        "multi_turn_miss_param": 200,
+        "multiple": 200,
+        "parallel": 200,
+        "parallel_multiple": 200,
+        "simple": 400
+      }
+    },
+    "RULER": {
+      "task": "ruler",
+      "metric": "32768,none",
+      "sample_counts": {
+        "niah_single_1": 500,
+        "niah_single_2": 500,
+        "niah_single_3": 500,
+        "niah_multikey_1": 500,
+        "niah_multikey_2": 500,
+        "niah_multikey_3": 500,
+        "niah_multiquery": 500,
+        "niah_multivalue": 500,
+        "ruler_vt": 500,
+        "ruler_cwe": 500,
+        "ruler_fwe": 500,
+        "ruler_qa_squad": 500,
+        "ruler_qa_hotpot": 500
+      },
+      "context_capacity": 32768,
+      "ruler_total_tokens": 32768,
+      "task_config_digest_by_model": {
+        "qwen3_30b": "ac84c7a619840103b35407da5838a1d477a1e07f477a0a046fd003fa7f29629e",
+        "qwen3_6_35b": "ac84c7a619840103b35407da5838a1d477a1e07f477a0a046fd003fa7f29629e"
+      }
+    }
+  },
+  "generation": {
+    "seed": 17,
+    "thinking": false,
+    "temperature": 0,
+    "do_sample": false,
+    "gsm8k_ifeval_max_tokens": 2048,
+    "bfcl_max_tokens": 4096,
+    "mmlu_fewshot": 5,
+    "task_defaults": "pinned harness defaults; GSM8K 8-shot, repeats=1; saved GSM8K evidence includes both answer-filter views",
+    "gsm8k_fewshot": 8,
+    "gsm8k_repeats": 1
+  },
+  "quantization": {
+    "name": "W4A16_NVFP4",
+    "group_size": 16,
+    "activation": "bfloat16",
+    "block_scale": "float8_e4m3fn",
+    "global_scale": "float32",
+    "scaling": "weight maxima only; no data calibration",
+    "linear_backend": "marlin",
+    "moe_backend": "marlin",
+    "canonical_order": true,
+    "kv_scale_policy": "unit",
+    "qwen36_recurrent_state": "float32"
+  },
+  "dataset_revisions": {
+    "google/IFEval": "966cd89545d6b6acfd7638bc708b98261ca58e84",
+    "openai/gsm8k": "740312add88f781978c0658806c59bc2815b9866",
+    "cais/mmlu": "c30699e8356da336a370243923dbaf21066bb9fe",
+    "TAUR-Lab/MuSR": "7c365b439a222150f317764d4f16ae6c96d7d94a",
+    "openai/openai_humaneval": "7dce6050a7d6d172f3cc5c32aa97f52fa1a2e544"
+  },
+  "sources": {
+    "lm_eval": {
+      "url": "https://github.com/EleutherAI/lm-evaluation-harness.git",
+      "revision": "d6de81643928d653435c431bae19945d41d32520",
+      "patch_sha256": "e7551dfc84c84feb8f902217892887af1ad0dcf307f03fbdb9a157e95e3247aa"
+    },
+    "bfcl": {
+      "url": "https://github.com/ShishirPatil/gorilla.git",
+      "revision": "faa6bdc668a9f6e6ad71512c51c410bb84f2ec09"
+    }
+  },
+  "ruler_bank_digests": {
+    "qwen3_30b": {
+      "niah_single_2": "6f059b1a617082cf965d87f95de68e5f8f7341e7ebfc8365dc07836342a8d637",
+      "ruler_cwe": "2738300adffbc1b08bb6399a356e2d0014a5c68dad7beb5a364f7c4b6b3a07c6",
+      "ruler_fwe": "56f09de2f8e840dcd3b48b1ef9a198e6f0541f6d7743fe17c407d9da1cddf0e0",
+      "niah_single_3": "c23ab9ecf79af0c50e80916e6ca62df35fe4e28f2c86b11ad0d4197df1c66f08",
+      "ruler_vt": "5b4a54849bb5950a25ab14a2e702d88396a23440adbafd7a26f53db317ceb216",
+      "ruler_qa_squad": "95c5a200b003f6122b13e8068877fd6b147c3a80bd7fe48b6e2b875218554fb3",
+      "ruler_qa_hotpot": "40f436954188bf657fcd2d4ccbf37a871ba7dca0d4cc7a78e62340ac9b284439",
+      "niah_multiquery": "549c03f558913c79acc17144c99ed1068fe4a969e1a822129664b93bfb58c942",
+      "niah_multikey_3": "55234e08e0a541f7bd87b892af34771059d7def14709052c68ca4b06a16d1d72",
+      "niah_single_1": "38c6271e83ab3bd130cf19338758b06416f0af694b7d681341f89ec06d8b6824",
+      "niah_multikey_1": "ae5bcac1ac22a42c3fe56fee286fd29890d7547d6f0621933fe9b3187fc27986",
+      "niah_multivalue": "c6368b148a3eeb889265d5a7c17596e838f5a8f27c1532cd51cbdf9b525af6ab",
+      "niah_multikey_2": "3a7dfa8d508b23a1d298cd1b900ab5053f303579711568210b1e0d1916561af8"
+    },
+    "qwen3_6_35b": {
+      "ruler_cwe": "58a41b6f9ebba7148c783bd7cc70232e45a06834f3a9a23a1a5c6571568c4137",
+      "niah_single_2": "1e608e2b128a4570d0980ac9baffc296f4bf4f11d7c68a0138cef20b3f4b3580",
+      "ruler_qa_squad": "b7ba2671cc1f0bc6a4e3a42e1d0f1a952e79351a84181fa1f3333181e1b25497",
+      "niah_single_3": "0fca915058cd65dbccf096b786c40faa433c2d81c6189d8fcf63351afc193477",
+      "ruler_qa_hotpot": "40514c794fd951ad89062b79156e2c0658a082f28927deb324bb311753829ddf",
+      "niah_multikey_1": "81dcaa7f3b826fea136092e0c2c37a50677074922d92de49184df79917b71391",
+      "niah_single_1": "0901f90feef5292c3b900fa481b83cd1afbbfbd38a69a0eadfa2ac62c54ebdd3",
+      "niah_multiquery": "d7be5832b69196a1d6dd6bbd8f54fbd2b3bf63c2e9ebd91cdd7eeb04010f17ef",
+      "niah_multikey_2": "0233e8cd83872bff6377f23836001e0472a472611d6885fbd9dc6f2a65721e1a",
+      "ruler_fwe": "97c9f4a10eeef591f09926fd2a929596a4a6d7845f5c044b492e5860cedfb6ce",
+      "niah_multivalue": "8e81eaec8608413810302cc11312d0384876cdebb9febb2bef6fb885a70320c9",
+      "niah_multikey_3": "91ab253e6fd4ca66561f1c2089c1a23ebbd961fbe7492e8760eb0446c6fa75d9",
+      "ruler_vt": "5494e0d2881b549f952b71c943d9c94f6419213885820a578fae8ae316a872e2"
+    }
+  }
+}

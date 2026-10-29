@@ -1,0 +1,129 @@
+{
+  "id": "cmpl-a7c27984113c62bb",
+  "object": "text_completion",
+  "created": 1793254931,
+  "model": "quality-model",
+  "choices": [
+    {
+      "index": 0,
+      "text": "One plus one is two.\n",
+      "logprobs": {
+        "text_offset": [
+          0,
+          3,
+          8,
+          12,
+          15,
+          19,
+          20
+        ],
+        "token_logprobs": [
+          null,
+          -8.108026504516602,
+          -1.491917371749878,
+          -1.6101672649383545,
+          -1.5472416877746582,
+          -1.103703498840332,
+          -1.6275166273117065
+        ],
+        "tokens": [
+          "One",
+          " plus",
+          " one",
+          " is",
+          " two",
+          ".",
+          "\n"
+        ],
+        "top_logprobs": [
+          null,
+          {
+            " plus": -8.108026504516602,
+            " of": -0.7955262660980225
+          },
+          {
+            " one": -1.491917371749878
+          },
+          {
+            " is": -1.6101672649383545,
+            " equals": -1.2976672649383545
+          },
+          {
+            " two": -1.5472416877746582
+          },
+          {
+            ".": -1.103703498840332
+          },
+          {
+            "\n": -1.6275166273117065
+          }
+        ]
+      },
+      "finish_reason": "length",
+      "stop_reason": null,
+      "token_ids": null,
+      "prompt_logprobs": [
+        null,
+        {
+          "5346": {
+            "logprob": -8.108026504516602,
+            "rank": 185,
+            "decoded_token": " plus"
+          },
+          "314": {
+            "logprob": -0.7955262660980225,
+            "rank": 1,
+            "decoded_token": " of"
+          }
+        },
+        {
+          "799": {
+            "logprob": -1.491917371749878,
+            "rank": 1,
+            "decoded_token": " one"
+          }
+        },
+        {
+          "369": {
+            "logprob": -1.6101672649383545,
+            "rank": 2,
+            "decoded_token": " is"
+          },
+          "16327": {
+            "logprob": -1.2976672649383545,
+            "rank": 1,
+            "decoded_token": " equals"
+          }
+        },
+        {
+          "1330": {
+            "logprob": -1.5472416877746582,
+            "rank": 1,
+            "decoded_token": " two"
+          }
+        },
+        {
+          "13": {
+            "logprob": -1.103703498840332,
+            "rank": 1,
+            "decoded_token": "."
+          }
+        }
+      ],
+      "prompt_token_ids": null,
+      "routed_experts": null
+    }
+  ],
+  "service_tier": null,
+  "system_fingerprint": "vllm-0.32.0-956b3b53",
+  "usage": {
+    "prompt_tokens": 6,
+    "total_tokens": 7,
+    "completion_tokens": 1,
+    "prompt_tokens_details": null,
+    "completion_tokens_details": null
+  },
+  "kv_transfer_params": null,
+  "ec_transfer_params": null,
+  "metrics": null
+}

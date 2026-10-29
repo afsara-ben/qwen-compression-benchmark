@@ -1,0 +1,85 @@
+diff --git a/lm_eval/tasks/ruler/common_utils.py b/lm_eval/tasks/ruler/common_utils.py
+index 9b5567a9..8da25e0f 100644
+--- a/lm_eval/tasks/ruler/common_utils.py
++++ b/lm_eval/tasks/ruler/common_utils.py
+@@ -15,9 +15,25 @@ if TYPE_CHECKING:
+ eval_logger = logging.getLogger(__name__)
+ 
+ DEFAULT_SEQ_LENGTHS = [
+-    4096,
++    32768,
+ ]
+ 
++
++class BudgetTokenizer:
++    """Reserve 256 tokens for chat wrapping and answer prefix during sizing only."""
++    def __init__(self, tokenizer):
++        self.tokenizer = tokenizer
++
++    def __getattr__(self, name):
++        return getattr(self.tokenizer, name)
++
++    def __call__(self, *args, **kwargs):
++        encoded = self.tokenizer(*args, **kwargs)
++        if not isinstance(encoded.input_ids, list) or (encoded.input_ids and isinstance(encoded.input_ids[0], list)):
++            raise ValueError('RULER budget tokenizer expects one text string')
++        encoded['input_ids'] = encoded.input_ids + [0] * 256
++        return encoded
++
+ # The keys a model name can arrive under. RULER tasks are handed the parsed
+ # `--model_args`, and each backend names the model differently: `pretrained`
+ # for local HuggingFace models, `model` for the API backends.
+@@ -66,7 +82,7 @@ def get_tokenizer(
+             "cannot be measured. Point the synthetic tasks at a repo that ships "
+             'tokenizer files, e.g. --metadata=\'{"tokenizer": "Qwen/Qwen3-0.6B"}\'.'
+         )
+-    return tok
++    return BudgetTokenizer(tok)
+ 
+ 
+ def postprocess_pred(prediction: list[str]) -> list[str]:
+diff --git a/lm_eval/tasks/ruler/ruler.yaml b/lm_eval/tasks/ruler/ruler.yaml
+index 93bd4d29..ecfa42a3 100644
+--- a/lm_eval/tasks/ruler/ruler.yaml
++++ b/lm_eval/tasks/ruler/ruler.yaml
+@@ -14,7 +14,7 @@ task:
+   - ruler_qa_squad
+   - ruler_qa_hotpot
+ aggregate_metric_list:
+-  - metric: "4096"
++  - metric: "32768"
+     weight_by_size: False
+ metadata:
+   version: 1
+diff --git a/lm_eval/tasks/ruler/vt_utils.py b/lm_eval/tasks/ruler/vt_utils.py
+index a98c160f..10d52401 100644
+--- a/lm_eval/tasks/ruler/vt_utils.py
++++ b/lm_eval/tasks/ruler/vt_utils.py
+@@ -154,7 +154,8 @@ def sys_vartrack_w_noise_random(
+     if add_fewshot and (icl_example is not None):
+         icl_example_out = " ".join(icl_example["outputs"])
+         icl_example = icl_example["input"] + " " + icl_example_out + "\n\n"
+-        example_tokens = len(tokenizer(icl_example).input_ids)
++        # Chat wrapping is reserved once for the complete request, not per example.
++        example_tokens = len(getattr(tokenizer, 'tokenizer', tokenizer)(icl_example).input_ids)
+ 
+     while total_tokens + tokens_to_generate + example_tokens < max_seq_length:
+         input_text, answer = generate_input_output(
+@@ -192,6 +193,8 @@ def sys_vartrack_w_noise_random(
+             except:  # noqa: E722
+                 if used_noises > incremental:
+                     used_noises -= incremental
++                else:
++                    raise RuntimeError('Cannot fit a valid variable-tracking example')
+ 
+         if add_fewshot and (icl_example is not None):
+             # insert icl_example between model template and input
+@@ -233,7 +236,7 @@ def get_dataset(
+     **kwargs,
+ ) -> list[dict]:
+     icl_example = sys_vartrack_w_noise_random(
+-        tokenizer=tokenizer,
++        tokenizer=getattr(tokenizer, 'tokenizer', tokenizer),
+         num_samples=1,
+         max_seq_length=500,
+         incremental=5,

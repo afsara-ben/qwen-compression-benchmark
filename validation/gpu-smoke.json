@@ -1,0 +1,132 @@
+{
+  "status": "stopped_at_user_request",
+  "full_workload_results_added": 0,
+  "results": [
+    {
+      "cell_id": "qwen3_6_35b--KV--RULER",
+      "status": "passed",
+      "gpu": {
+        "index": "1",
+        "uuid": "GPU-c3276b96-6ac1-8301-007b-7f01470d8e3f",
+        "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+        "total_mib": 97887,
+        "free_mib": 97251,
+        "capability": 12.0,
+        "driver": "580.95.05",
+        "busy": false
+      },
+      "weight_storage_bytes": 69321223296,
+      "elapsed_s": 124.74082541465759,
+      "evidence": "smokes/qwen3_6_35b--KV--RULER",
+      "boundary": true
+    },
+    {
+      "cell_id": "qwen3_6_35b--E--RULER",
+      "status": "passed",
+      "gpu": {
+        "index": "1",
+        "uuid": "GPU-c3276b96-6ac1-8301-007b-7f01470d8e3f",
+        "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+        "total_mib": 97887,
+        "free_mib": 97251,
+        "capability": 12.0,
+        "driver": "580.95.05",
+        "busy": false
+      },
+      "weight_storage_bytes": 56478297216,
+      "elapsed_s": 102.73307681083679,
+      "evidence": "smokes/qwen3_6_35b--E--RULER",
+      "boundary": true
+    },
+    {
+      "cell_id": "qwen3_6_35b--E+KV--RULER",
+      "status": "passed",
+      "gpu": {
+        "index": "1",
+        "uuid": "GPU-c3276b96-6ac1-8301-007b-7f01470d8e3f",
+        "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+        "total_mib": 97887,
+        "free_mib": 97251,
+        "capability": 12.0,
+        "driver": "580.95.05",
+        "busy": false
+      },
+      "weight_storage_bytes": 56478297216,
+      "elapsed_s": 98.73616814613342,
+      "evidence": "smokes/qwen3_6_35b--E+KV--RULER",
+      "boundary": true
+    },
+    {
+      "cell_id": "qwen3_6_35b--E+W--RULER",
+      "status": "passed",
+      "gpu": {
+        "index": "1",
+        "uuid": "GPU-c3276b96-6ac1-8301-007b-7f01470d8e3f",
+        "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+        "total_mib": 97887,
+        "free_mib": 97251,
+        "capability": 12.0,
+        "driver": "580.95.05",
+        "busy": false
+      },
+      "weight_storage_bytes": 17372622776,
+      "elapsed_s": 101.73702144622803,
+      "evidence": "smokes/qwen3_6_35b--E+W--RULER",
+      "boundary": true
+    },
+    {
+      "cell_id": "qwen3_6_35b--E+W+KV--RULER",
+      "status": "passed",
+      "gpu": {
+        "index": "1",
+        "uuid": "GPU-c3276b96-6ac1-8301-007b-7f01470d8e3f",
+        "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+        "total_mib": 97887,
+        "free_mib": 97251,
+        "capability": 12.0,
+        "driver": "580.95.05",
+        "busy": false
+      },
+      "weight_storage_bytes": 17372622776,
+      "elapsed_s": 102.74167132377625,
+      "evidence": "smokes/qwen3_6_35b--E+W+KV--RULER",
+      "boundary": true
+    },
+    {
+      "cell_id": "qwen3_6_35b--W--RULER",
+      "status": "passed",
+      "gpu": {
+        "index": "1",
+        "uuid": "GPU-c3276b96-6ac1-8301-007b-7f01470d8e3f",
+        "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+        "total_mib": 97887,
+        "free_mib": 97251,
+        "capability": 12.0,
+        "driver": "580.95.05",
+        "busy": false
+      },
+      "weight_storage_bytes": 20990717816,
+      "elapsed_s": 104.72919654846191,
+      "evidence": "smokes/qwen3_6_35b--W--RULER",
+      "boundary": true
+    },
+    {
+      "cell_id": "qwen3_6_35b--W+KV--RULER",
+      "status": "passed",
+      "gpu": {
+        "index": "1",
+        "uuid": "GPU-c3276b96-6ac1-8301-007b-7f01470d8e3f",
+        "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+        "total_mib": 97887,
+        "free_mib": 97251,
+        "capability": 12.0,
+        "driver": "580.95.05",
+        "busy": false
+      },
+      "weight_storage_bytes": 20990717816,
+      "elapsed_s": 98.611896276474,
+      "evidence": "smokes/qwen3_6_35b--W+KV--RULER",
+      "boundary": true
+    }
+  ]
+}

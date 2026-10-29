@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qwen-compression-benchmark"
+version = "1.0.0"
+requires-python = ">=3.10"
+description = "Portable eight-configuration Qwen benchmark with a global RULER phase gate"
+
+[project.entry-points."vllm.general_plugins"]
+qbench = "qbench.plugin:register"
+
+[tool.setuptools.packages.find]
+include = ["qbench*", "runtime*"]

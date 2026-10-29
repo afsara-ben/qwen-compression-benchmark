@@ -1,0 +1,6 @@
+assert 2+2==4 (True, 'passed')
+assert False (False, 'failed')
+open('/etc/passwd').read() (False, 'failed')
+import socket; socket.socket() (False, 'failed')
+while True: pass (False, 'failed')
+import math; assert math.sqrt(9)==3 (True, 'passed')

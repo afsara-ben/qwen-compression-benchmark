@@ -1,0 +1,39 @@
+{
+  "citation": "",
+  "description": "",
+  "features": {
+    "index": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "input": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "input_example": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "outputs": {
+      "feature": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "_type": "List"
+    },
+    "length": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "max_length": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "gen_prefix": {
+      "dtype": "string",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": ""
+}

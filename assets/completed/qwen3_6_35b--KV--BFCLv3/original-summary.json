@@ -1,0 +1,146 @@
+{
+  "sample_counts_saved": {
+    "multi_turn_miss_param": 200,
+    "parallel_multiple": 200,
+    "multi_turn_long_context": 200,
+    "parallel": 200,
+    "live_irrelevance": 882,
+    "javascript": 50,
+    "live_parallel": 16,
+    "multiple": 200,
+    "live_multiple": 1053,
+    "java": 100,
+    "live_parallel_multiple": 24,
+    "multi_turn_base": 200,
+    "live_relevance": 18,
+    "simple": 400,
+    "multi_turn_miss_func": 200,
+    "irrelevance": 240,
+    "live_simple": 258
+  },
+  "expected_counts": {
+    "irrelevance": 240,
+    "java": 100,
+    "javascript": 50,
+    "live_irrelevance": 882,
+    "live_multiple": 1053,
+    "live_parallel": 16,
+    "live_parallel_multiple": 24,
+    "live_relevance": 18,
+    "live_simple": 258,
+    "multi_turn_base": 200,
+    "multi_turn_long_context": 200,
+    "multi_turn_miss_func": 200,
+    "multi_turn_miss_param": 200,
+    "multiple": 200,
+    "parallel": 200,
+    "parallel_multiple": 200,
+    "simple": 400
+  },
+  "inference_errors": [],
+  "elapsed_s": 4366.686354637146,
+  "study_protocol": {
+    "pilot": false,
+    "workload": "BFCLv3",
+    "context_policy": "benchmark_native_prompts_and_output_limits",
+    "server_context_capacity_tokens": 131072,
+    "capacity_provenance": "Successful prior responses reused only when their full 4096-token allowance fit the original serving capacity. Capacity-limited cases and inference errors rerun.",
+    "output_allowance_tokens": 4096,
+    "official_revision": "faa6bdc668a9f6e6ad71512c51c410bb84f2ec09",
+    "thinking": false,
+    "native_template": "/scratch/hys4qm/moecbench/quality-20261022/models/qwen36-base",
+    "xml_parser": "vllm Qwen3EngineToolParser"
+  },
+  "results": {
+    "bfcl_v3": {
+      "acc,none": 0.690819944222321
+    }
+  },
+  "category_scores": {
+    "irrelevance": {
+      "accuracy": 0.9125,
+      "correct_count": 219,
+      "total_count": 240
+    },
+    "java": {
+      "accuracy": 0.66,
+      "correct_count": 66,
+      "total_count": 100
+    },
+    "javascript": {
+      "accuracy": 0.68,
+      "correct_count": 34,
+      "total_count": 50
+    },
+    "live_irrelevance": {
+      "accuracy": 0.7585034013605442,
+      "correct_count": 669,
+      "total_count": 882
+    },
+    "live_multiple": {
+      "accuracy": 0.7834757834757835,
+      "correct_count": 825,
+      "total_count": 1053
+    },
+    "live_parallel": {
+      "accuracy": 0.8125,
+      "correct_count": 13,
+      "total_count": 16
+    },
+    "live_parallel_multiple": {
+      "accuracy": 0.7916666666666666,
+      "correct_count": 19,
+      "total_count": 24
+    },
+    "live_relevance": {
+      "accuracy": 0.7222222222222222,
+      "correct_count": 13,
+      "total_count": 18
+    },
+    "live_simple": {
+      "accuracy": 0.8217054263565892,
+      "correct_count": 212,
+      "total_count": 258
+    },
+    "multi_turn_base": {
+      "accuracy": 0.615,
+      "correct_count": 123,
+      "total_count": 200
+    },
+    "multi_turn_long_context": {
+      "accuracy": 0.505,
+      "correct_count": 101,
+      "total_count": 200
+    },
+    "multi_turn_miss_func": {
+      "accuracy": 0.25,
+      "correct_count": 50,
+      "total_count": 200
+    },
+    "multi_turn_miss_param": {
+      "accuracy": 0.345,
+      "correct_count": 69,
+      "total_count": 200
+    },
+    "multiple": {
+      "accuracy": 0.905,
+      "correct_count": 181,
+      "total_count": 200
+    },
+    "parallel": {
+      "accuracy": 0.87,
+      "correct_count": 174,
+      "total_count": 200
+    },
+    "parallel_multiple": {
+      "accuracy": 0.885,
+      "correct_count": 177,
+      "total_count": 200
+    },
+    "simple": {
+      "accuracy": 0.93,
+      "correct_count": 372,
+      "total_count": 400
+    }
+  }
+}

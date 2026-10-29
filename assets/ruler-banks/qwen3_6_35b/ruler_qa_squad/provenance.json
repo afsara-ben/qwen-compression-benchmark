@@ -1,0 +1,12 @@
+{
+  "task": "ruler_qa_squad",
+  "metadata": {
+    "version": 1.0,
+    "tokenizer": "/scratch/hys4qm/moecbench/quality-20261022/models/qwen36-base",
+    "max_seq_lengths": [
+      32768
+    ],
+    "config_source": "/scratch/hys4qm/moecbench/quality-20261022/sources/lm-evaluation-harness/lm_eval/tasks/ruler/qa_squad.yaml"
+  },
+  "recipe": "ruler-32768-reserve256-seed17-v1"
+}

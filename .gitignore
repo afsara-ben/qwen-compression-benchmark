@@ -1,0 +1,14 @@
+.bootstrap/
+.runtime/
+work/
+state/
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+*.tar.gz
+.assets.lock
+.asset-download*
+assets/ruler-banks/**/*.arrow
+assets/completed/**/*.gz
+assets/nltk/

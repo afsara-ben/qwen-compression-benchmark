@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "status": "complete",
+  "cell_id": "qwen3_6_35b--E+KV--RULER",
+  "model": "qwen3_6_35b",
+  "configuration": "E+KV",
+  "workload": "RULER",
+  "protocol_fingerprint": "e5c43bfd88bd0db25e168af21848d0dd49283b8429c9f797b9a3a5f6a9e41880",
+  "runtime_fingerprint": "a8097c2675a5191e537ea026b197741f5d6ef57eae2b4585e2a4cbe468160316",
+  "score": 0.9452820512820513,
+  "weight_storage_bytes": 56478297216,
+  "elapsed_s": 9827.61946964264,
+  "hardware": {
+    "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+    "memory_mib": 97887,
+    "gpu_uuid": "GPU-c3276b96-6ac1-8301-007b-7f01470d8e3f"
+  },
+  "origin": "imported validated study",
+  "files": {
+    "audit.json": "91e6c662779299347a8abb9ad3eaa05527cef0b3f683a32578cf5d09efebd98e",
+    "launch.json": "618c1cfaea18bac1d8fbac4c371b9b5f8fdaf6ca4bac9dd7247a2d3f82dc7d2f",
+    "original-summary.json": "783e199794819aae15805943cbd714acef0caa20a947e7e3818eb3aa45944ffd",
+    "sample-evidence.json": "9567d54585890562b238b550f132ccf908abf2d5ecd3eb8be02279d94a44c55b",
+    "samples.jsonl.gz": "975d7f3992c2af28dd198e43885ebd7daafa4afc4ba0f5f1cd349d0b56eedd3b",
+    "summary.json": "783e199794819aae15805943cbd714acef0caa20a947e7e3818eb3aa45944ffd"
+  }
+}

@@ -1,0 +1,1462 @@
+{
+  "results": [
+    {
+      "pid": 278618,
+      "gpu": "GPU-c3276b96-6ac1-8301-007b-7f01470d8e3f",
+      "non_cuda_parameters": [],
+      "parameter_dtypes": {
+        "torch.bfloat16": 1035153088,
+        "torch.float32": 17550,
+        "torch.int32": 3400499200,
+        "torch.float8_e4m3fn": 1700249600
+      },
+      "weight_storage_bytes": 17372622776,
+      "model_buffer_bytes": 33554592,
+      "cache_storage_bytes": 72054865920,
+      "cache_groups": [
+        {
+          "spec": "MambaSpec",
+          "block_size": 32768,
+          "layer_count": 10,
+          "dtype": "None",
+          "state_dtypes": [
+            "torch.float32",
+            "torch.float32"
+          ],
+          "page_bytes": 2195456
+        },
+        {
+          "spec": "MambaSpec",
+          "block_size": 32768,
+          "layer_count": 10,
+          "dtype": "None",
+          "state_dtypes": [
+            "torch.float32",
+            "torch.float32"
+          ],
+          "page_bytes": 2195456
+        },
+        {
+          "spec": "MambaSpec",
+          "block_size": 32768,
+          "layer_count": 10,
+          "dtype": "None",
+          "state_dtypes": [
+            "torch.float32",
+            "torch.float32"
+          ],
+          "page_bytes": 2195456
+        },
+        {
+          "spec": "FullAttentionSpec",
+          "block_size": 2144,
+          "layer_count": 10,
+          "dtype": "torch.uint8",
+          "state_dtypes": [],
+          "page_bytes": 2195456
+        }
+      ],
+      "cache_blocks": 3282,
+      "kv_dtype": "fp8",
+      "max_context_concurrency": 172.73684210526315,
+      "minimum_context_blocks": 19,
+      "pool_bytes_per_block": 21954560,
+      "minimum_context_cache_bytes": 417136640,
+      "experts": [
+        {
+          "name": "language_model.model.layers.0.mlp.experts.routed_experts",
+          "count": 205
+        },
+        {
+          "name": "language_model.model.layers.1.mlp.experts.routed_experts",
+          "count": 205
+        },
+        {
+          "name": "language_model.model.layers.2.mlp.experts.routed_experts",
+          "count": 205
+        },
+        {
+          "name": "language_model.model.layers.3.mlp.experts.routed_experts",
+          "count": 205
+        },
+        {
+          "name": "language_model.model.layers.4.mlp.experts.routed_experts",
+          "count": 205
+        },
+        {
+          "name": "language_model.model.layers.5.mlp.experts.routed_experts",
+          "count": 205
+        },
+        {
+          "name": "language_model.model.layers.6.mlp.experts.routed_experts",
+          "count": 205
+        },
+        {
+          "name": "language_model.model.layers.7.mlp.experts.routed_experts",
+          "count": 205
+        },
+        {
+          "name": "language_model.model.layers.8.mlp.experts.routed_experts",
+          "count": 205
+        },
+        {
+          "name": "language_model.model.layers.9.mlp.experts.routed_experts",
+          "count": 205
+        },
+        {
+          "name": "language_model.model.layers.10.mlp.experts.routed_experts",
+          "count": 205
+        },
+        {
+          "name": "language_model.model.layers.11.mlp.experts.routed_experts",
+          "count": 205
+        },
+        {
+          "name": "language_model.model.layers.12.mlp.experts.routed_experts",
+          "count": 205
+        },
+        {
+          "name": "language_model.model.layers.13.mlp.experts.routed_experts",
+          "count": 205
+        },
+        {
+          "name": "language_model.model.layers.14.mlp.experts.routed_experts",
+          "count": 205
+        },
+        {
+          "name": "language_model.model.layers.15.mlp.experts.routed_experts",
+          "count": 205
+        },
+        {
+          "name": "language_model.model.layers.16.mlp.experts.routed_experts",
+          "count": 205
+        },
+        {
+          "name": "language_model.model.layers.17.mlp.experts.routed_experts",
+          "count": 205
+        },
+        {
+          "name": "language_model.model.layers.18.mlp.experts.routed_experts",
+          "count": 205
+        },
+        {
+          "name": "language_model.model.layers.19.mlp.experts.routed_experts",
+          "count": 205
+        },
+        {
+          "name": "language_model.model.layers.20.mlp.experts.routed_experts",
+          "count": 205
+        },
+        {
+          "name": "language_model.model.layers.21.mlp.experts.routed_experts",
+          "count": 205
+        },
+        {
+          "name": "language_model.model.layers.22.mlp.experts.routed_experts",
+          "count": 205
+        },
+        {
+          "name": "language_model.model.layers.23.mlp.experts.routed_experts",
+          "count": 205
+        },
+        {
+          "name": "language_model.model.layers.24.mlp.experts.routed_experts",
+          "count": 205
+        },
+        {
+          "name": "language_model.model.layers.25.mlp.experts.routed_experts",
+          "count": 205
+        },
+        {
+          "name": "language_model.model.layers.26.mlp.experts.routed_experts",
+          "count": 205
+        },
+        {
+          "name": "language_model.model.layers.27.mlp.experts.routed_experts",
+          "count": 205
+        },
+        {
+          "name": "language_model.model.layers.28.mlp.experts.routed_experts",
+          "count": 205
+        },
+        {
+          "name": "language_model.model.layers.29.mlp.experts.routed_experts",
+          "count": 205
+        },
+        {
+          "name": "language_model.model.layers.30.mlp.experts.routed_experts",
+          "count": 205
+        },
+        {
+          "name": "language_model.model.layers.31.mlp.experts.routed_experts",
+          "count": 205
+        },
+        {
+          "name": "language_model.model.layers.32.mlp.experts.routed_experts",
+          "count": 205
+        },
+        {
+          "name": "language_model.model.layers.33.mlp.experts.routed_experts",
+          "count": 205
+        },
+        {
+          "name": "language_model.model.layers.34.mlp.experts.routed_experts",
+          "count": 205
+        },
+        {
+          "name": "language_model.model.layers.35.mlp.experts.routed_experts",
+          "count": 205
+        },
+        {
+          "name": "language_model.model.layers.36.mlp.experts.routed_experts",
+          "count": 205
+        },
+        {
+          "name": "language_model.model.layers.37.mlp.experts.routed_experts",
+          "count": 205
+        },
+        {
+          "name": "language_model.model.layers.38.mlp.experts.routed_experts",
+          "count": 205
+        },
+        {
+          "name": "language_model.model.layers.39.mlp.experts.routed_experts",
+          "count": 205
+        }
+      ],
+      "quantization_methods": {
+        "UnquantizedEmbeddingMethod": 1,
+        "UnquantizedLinearMethod": 111,
+        "ModelOptLinearMethod": 190,
+        "ModelOptNvFp4FusedMoE": 40,
+        "ModelOptKVCacheMethod": 10
+      },
+      "kv_scales": {
+        "language_model.model.layers.3.self_attn.attn._k_scale": 1.0,
+        "language_model.model.layers.3.self_attn.attn._v_scale": 1.0,
+        "language_model.model.layers.7.self_attn.attn._k_scale": 1.0,
+        "language_model.model.layers.7.self_attn.attn._v_scale": 1.0,
+        "language_model.model.layers.11.self_attn.attn._k_scale": 1.0,
+        "language_model.model.layers.11.self_attn.attn._v_scale": 1.0,
+        "language_model.model.layers.15.self_attn.attn._k_scale": 1.0,
+        "language_model.model.layers.15.self_attn.attn._v_scale": 1.0,
+        "language_model.model.layers.19.self_attn.attn._k_scale": 1.0,
+        "language_model.model.layers.19.self_attn.attn._v_scale": 1.0,
+        "language_model.model.layers.23.self_attn.attn._k_scale": 1.0,
+        "language_model.model.layers.23.self_attn.attn._v_scale": 1.0,
+        "language_model.model.layers.27.self_attn.attn._k_scale": 1.0,
+        "language_model.model.layers.27.self_attn.attn._v_scale": 1.0,
+        "language_model.model.layers.31.self_attn.attn._k_scale": 1.0,
+        "language_model.model.layers.31.self_attn.attn._v_scale": 1.0,
+        "language_model.model.layers.35.self_attn.attn._k_scale": 1.0,
+        "language_model.model.layers.35.self_attn.attn._v_scale": 1.0,
+        "language_model.model.layers.39.self_attn.attn._k_scale": 1.0,
+        "language_model.model.layers.39.self_attn.attn._v_scale": 1.0
+      },
+      "nvfp4_modules": [
+        {
+          "name": "language_model.model.layers.0.linear_attn.in_proj_qkvz",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.0.linear_attn.in_proj_ba",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.0.linear_attn.out_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.0.mlp.shared_expert.gate_up_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.0.mlp.shared_expert.down_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.0.mlp.experts.routed_experts",
+          "method": "ModelOptNvFp4FusedMoE",
+          "use_a16": true,
+          "backend": "NvFp4MoeBackend.MARLIN"
+        },
+        {
+          "name": "language_model.model.layers.1.linear_attn.in_proj_qkvz",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.1.linear_attn.in_proj_ba",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.1.linear_attn.out_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.1.mlp.shared_expert.gate_up_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.1.mlp.shared_expert.down_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.1.mlp.experts.routed_experts",
+          "method": "ModelOptNvFp4FusedMoE",
+          "use_a16": true,
+          "backend": "NvFp4MoeBackend.MARLIN"
+        },
+        {
+          "name": "language_model.model.layers.2.linear_attn.in_proj_qkvz",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.2.linear_attn.in_proj_ba",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.2.linear_attn.out_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.2.mlp.shared_expert.gate_up_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.2.mlp.shared_expert.down_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.2.mlp.experts.routed_experts",
+          "method": "ModelOptNvFp4FusedMoE",
+          "use_a16": true,
+          "backend": "NvFp4MoeBackend.MARLIN"
+        },
+        {
+          "name": "language_model.model.layers.3.self_attn.qkv_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.3.self_attn.o_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.3.mlp.shared_expert.gate_up_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.3.mlp.shared_expert.down_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.3.mlp.experts.routed_experts",
+          "method": "ModelOptNvFp4FusedMoE",
+          "use_a16": true,
+          "backend": "NvFp4MoeBackend.MARLIN"
+        },
+        {
+          "name": "language_model.model.layers.4.linear_attn.in_proj_qkvz",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.4.linear_attn.in_proj_ba",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.4.linear_attn.out_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.4.mlp.shared_expert.gate_up_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.4.mlp.shared_expert.down_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.4.mlp.experts.routed_experts",
+          "method": "ModelOptNvFp4FusedMoE",
+          "use_a16": true,
+          "backend": "NvFp4MoeBackend.MARLIN"
+        },
+        {
+          "name": "language_model.model.layers.5.linear_attn.in_proj_qkvz",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.5.linear_attn.in_proj_ba",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.5.linear_attn.out_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.5.mlp.shared_expert.gate_up_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.5.mlp.shared_expert.down_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.5.mlp.experts.routed_experts",
+          "method": "ModelOptNvFp4FusedMoE",
+          "use_a16": true,
+          "backend": "NvFp4MoeBackend.MARLIN"
+        },
+        {
+          "name": "language_model.model.layers.6.linear_attn.in_proj_qkvz",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.6.linear_attn.in_proj_ba",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.6.linear_attn.out_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.6.mlp.shared_expert.gate_up_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.6.mlp.shared_expert.down_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.6.mlp.experts.routed_experts",
+          "method": "ModelOptNvFp4FusedMoE",
+          "use_a16": true,
+          "backend": "NvFp4MoeBackend.MARLIN"
+        },
+        {
+          "name": "language_model.model.layers.7.self_attn.qkv_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.7.self_attn.o_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.7.mlp.shared_expert.gate_up_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.7.mlp.shared_expert.down_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.7.mlp.experts.routed_experts",
+          "method": "ModelOptNvFp4FusedMoE",
+          "use_a16": true,
+          "backend": "NvFp4MoeBackend.MARLIN"
+        },
+        {
+          "name": "language_model.model.layers.8.linear_attn.in_proj_qkvz",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.8.linear_attn.in_proj_ba",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.8.linear_attn.out_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.8.mlp.shared_expert.gate_up_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.8.mlp.shared_expert.down_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.8.mlp.experts.routed_experts",
+          "method": "ModelOptNvFp4FusedMoE",
+          "use_a16": true,
+          "backend": "NvFp4MoeBackend.MARLIN"
+        },
+        {
+          "name": "language_model.model.layers.9.linear_attn.in_proj_qkvz",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.9.linear_attn.in_proj_ba",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.9.linear_attn.out_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.9.mlp.shared_expert.gate_up_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.9.mlp.shared_expert.down_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.9.mlp.experts.routed_experts",
+          "method": "ModelOptNvFp4FusedMoE",
+          "use_a16": true,
+          "backend": "NvFp4MoeBackend.MARLIN"
+        },
+        {
+          "name": "language_model.model.layers.10.linear_attn.in_proj_qkvz",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.10.linear_attn.in_proj_ba",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.10.linear_attn.out_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.10.mlp.shared_expert.gate_up_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.10.mlp.shared_expert.down_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.10.mlp.experts.routed_experts",
+          "method": "ModelOptNvFp4FusedMoE",
+          "use_a16": true,
+          "backend": "NvFp4MoeBackend.MARLIN"
+        },
+        {
+          "name": "language_model.model.layers.11.self_attn.qkv_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.11.self_attn.o_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.11.mlp.shared_expert.gate_up_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.11.mlp.shared_expert.down_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.11.mlp.experts.routed_experts",
+          "method": "ModelOptNvFp4FusedMoE",
+          "use_a16": true,
+          "backend": "NvFp4MoeBackend.MARLIN"
+        },
+        {
+          "name": "language_model.model.layers.12.linear_attn.in_proj_qkvz",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.12.linear_attn.in_proj_ba",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.12.linear_attn.out_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.12.mlp.shared_expert.gate_up_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.12.mlp.shared_expert.down_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.12.mlp.experts.routed_experts",
+          "method": "ModelOptNvFp4FusedMoE",
+          "use_a16": true,
+          "backend": "NvFp4MoeBackend.MARLIN"
+        },
+        {
+          "name": "language_model.model.layers.13.linear_attn.in_proj_qkvz",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.13.linear_attn.in_proj_ba",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.13.linear_attn.out_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.13.mlp.shared_expert.gate_up_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.13.mlp.shared_expert.down_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.13.mlp.experts.routed_experts",
+          "method": "ModelOptNvFp4FusedMoE",
+          "use_a16": true,
+          "backend": "NvFp4MoeBackend.MARLIN"
+        },
+        {
+          "name": "language_model.model.layers.14.linear_attn.in_proj_qkvz",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.14.linear_attn.in_proj_ba",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.14.linear_attn.out_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.14.mlp.shared_expert.gate_up_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.14.mlp.shared_expert.down_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.14.mlp.experts.routed_experts",
+          "method": "ModelOptNvFp4FusedMoE",
+          "use_a16": true,
+          "backend": "NvFp4MoeBackend.MARLIN"
+        },
+        {
+          "name": "language_model.model.layers.15.self_attn.qkv_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.15.self_attn.o_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.15.mlp.shared_expert.gate_up_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.15.mlp.shared_expert.down_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.15.mlp.experts.routed_experts",
+          "method": "ModelOptNvFp4FusedMoE",
+          "use_a16": true,
+          "backend": "NvFp4MoeBackend.MARLIN"
+        },
+        {
+          "name": "language_model.model.layers.16.linear_attn.in_proj_qkvz",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.16.linear_attn.in_proj_ba",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.16.linear_attn.out_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.16.mlp.shared_expert.gate_up_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.16.mlp.shared_expert.down_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.16.mlp.experts.routed_experts",
+          "method": "ModelOptNvFp4FusedMoE",
+          "use_a16": true,
+          "backend": "NvFp4MoeBackend.MARLIN"
+        },
+        {
+          "name": "language_model.model.layers.17.linear_attn.in_proj_qkvz",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.17.linear_attn.in_proj_ba",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.17.linear_attn.out_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.17.mlp.shared_expert.gate_up_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.17.mlp.shared_expert.down_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.17.mlp.experts.routed_experts",
+          "method": "ModelOptNvFp4FusedMoE",
+          "use_a16": true,
+          "backend": "NvFp4MoeBackend.MARLIN"
+        },
+        {
+          "name": "language_model.model.layers.18.linear_attn.in_proj_qkvz",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.18.linear_attn.in_proj_ba",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.18.linear_attn.out_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.18.mlp.shared_expert.gate_up_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.18.mlp.shared_expert.down_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.18.mlp.experts.routed_experts",
+          "method": "ModelOptNvFp4FusedMoE",
+          "use_a16": true,
+          "backend": "NvFp4MoeBackend.MARLIN"
+        },
+        {
+          "name": "language_model.model.layers.19.self_attn.qkv_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.19.self_attn.o_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.19.mlp.shared_expert.gate_up_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.19.mlp.shared_expert.down_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.19.mlp.experts.routed_experts",
+          "method": "ModelOptNvFp4FusedMoE",
+          "use_a16": true,
+          "backend": "NvFp4MoeBackend.MARLIN"
+        },
+        {
+          "name": "language_model.model.layers.20.linear_attn.in_proj_qkvz",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.20.linear_attn.in_proj_ba",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.20.linear_attn.out_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.20.mlp.shared_expert.gate_up_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.20.mlp.shared_expert.down_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.20.mlp.experts.routed_experts",
+          "method": "ModelOptNvFp4FusedMoE",
+          "use_a16": true,
+          "backend": "NvFp4MoeBackend.MARLIN"
+        },
+        {
+          "name": "language_model.model.layers.21.linear_attn.in_proj_qkvz",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.21.linear_attn.in_proj_ba",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.21.linear_attn.out_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.21.mlp.shared_expert.gate_up_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.21.mlp.shared_expert.down_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.21.mlp.experts.routed_experts",
+          "method": "ModelOptNvFp4FusedMoE",
+          "use_a16": true,
+          "backend": "NvFp4MoeBackend.MARLIN"
+        },
+        {
+          "name": "language_model.model.layers.22.linear_attn.in_proj_qkvz",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.22.linear_attn.in_proj_ba",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.22.linear_attn.out_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.22.mlp.shared_expert.gate_up_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.22.mlp.shared_expert.down_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.22.mlp.experts.routed_experts",
+          "method": "ModelOptNvFp4FusedMoE",
+          "use_a16": true,
+          "backend": "NvFp4MoeBackend.MARLIN"
+        },
+        {
+          "name": "language_model.model.layers.23.self_attn.qkv_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.23.self_attn.o_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.23.mlp.shared_expert.gate_up_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.23.mlp.shared_expert.down_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.23.mlp.experts.routed_experts",
+          "method": "ModelOptNvFp4FusedMoE",
+          "use_a16": true,
+          "backend": "NvFp4MoeBackend.MARLIN"
+        },
+        {
+          "name": "language_model.model.layers.24.linear_attn.in_proj_qkvz",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.24.linear_attn.in_proj_ba",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.24.linear_attn.out_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.24.mlp.shared_expert.gate_up_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.24.mlp.shared_expert.down_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.24.mlp.experts.routed_experts",
+          "method": "ModelOptNvFp4FusedMoE",
+          "use_a16": true,
+          "backend": "NvFp4MoeBackend.MARLIN"
+        },
+        {
+          "name": "language_model.model.layers.25.linear_attn.in_proj_qkvz",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.25.linear_attn.in_proj_ba",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.25.linear_attn.out_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.25.mlp.shared_expert.gate_up_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.25.mlp.shared_expert.down_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.25.mlp.experts.routed_experts",
+          "method": "ModelOptNvFp4FusedMoE",
+          "use_a16": true,
+          "backend": "NvFp4MoeBackend.MARLIN"
+        },
+        {
+          "name": "language_model.model.layers.26.linear_attn.in_proj_qkvz",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.26.linear_attn.in_proj_ba",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.26.linear_attn.out_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.26.mlp.shared_expert.gate_up_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.26.mlp.shared_expert.down_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.26.mlp.experts.routed_experts",
+          "method": "ModelOptNvFp4FusedMoE",
+          "use_a16": true,
+          "backend": "NvFp4MoeBackend.MARLIN"
+        },
+        {
+          "name": "language_model.model.layers.27.self_attn.qkv_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.27.self_attn.o_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.27.mlp.shared_expert.gate_up_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.27.mlp.shared_expert.down_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.27.mlp.experts.routed_experts",
+          "method": "ModelOptNvFp4FusedMoE",
+          "use_a16": true,
+          "backend": "NvFp4MoeBackend.MARLIN"
+        },
+        {
+          "name": "language_model.model.layers.28.linear_attn.in_proj_qkvz",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.28.linear_attn.in_proj_ba",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.28.linear_attn.out_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.28.mlp.shared_expert.gate_up_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.28.mlp.shared_expert.down_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.28.mlp.experts.routed_experts",
+          "method": "ModelOptNvFp4FusedMoE",
+          "use_a16": true,
+          "backend": "NvFp4MoeBackend.MARLIN"
+        },
+        {
+          "name": "language_model.model.layers.29.linear_attn.in_proj_qkvz",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.29.linear_attn.in_proj_ba",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.29.linear_attn.out_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.29.mlp.shared_expert.gate_up_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.29.mlp.shared_expert.down_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.29.mlp.experts.routed_experts",
+          "method": "ModelOptNvFp4FusedMoE",
+          "use_a16": true,
+          "backend": "NvFp4MoeBackend.MARLIN"
+        },
+        {
+          "name": "language_model.model.layers.30.linear_attn.in_proj_qkvz",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.30.linear_attn.in_proj_ba",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.30.linear_attn.out_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.30.mlp.shared_expert.gate_up_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.30.mlp.shared_expert.down_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.30.mlp.experts.routed_experts",
+          "method": "ModelOptNvFp4FusedMoE",
+          "use_a16": true,
+          "backend": "NvFp4MoeBackend.MARLIN"
+        },
+        {
+          "name": "language_model.model.layers.31.self_attn.qkv_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.31.self_attn.o_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.31.mlp.shared_expert.gate_up_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.31.mlp.shared_expert.down_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.31.mlp.experts.routed_experts",
+          "method": "ModelOptNvFp4FusedMoE",
+          "use_a16": true,
+          "backend": "NvFp4MoeBackend.MARLIN"
+        },
+        {
+          "name": "language_model.model.layers.32.linear_attn.in_proj_qkvz",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.32.linear_attn.in_proj_ba",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.32.linear_attn.out_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.32.mlp.shared_expert.gate_up_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.32.mlp.shared_expert.down_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.32.mlp.experts.routed_experts",
+          "method": "ModelOptNvFp4FusedMoE",
+          "use_a16": true,
+          "backend": "NvFp4MoeBackend.MARLIN"
+        },
+        {
+          "name": "language_model.model.layers.33.linear_attn.in_proj_qkvz",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.33.linear_attn.in_proj_ba",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.33.linear_attn.out_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.33.mlp.shared_expert.gate_up_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.33.mlp.shared_expert.down_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.33.mlp.experts.routed_experts",
+          "method": "ModelOptNvFp4FusedMoE",
+          "use_a16": true,
+          "backend": "NvFp4MoeBackend.MARLIN"
+        },
+        {
+          "name": "language_model.model.layers.34.linear_attn.in_proj_qkvz",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.34.linear_attn.in_proj_ba",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.34.linear_attn.out_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.34.mlp.shared_expert.gate_up_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.34.mlp.shared_expert.down_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.34.mlp.experts.routed_experts",
+          "method": "ModelOptNvFp4FusedMoE",
+          "use_a16": true,
+          "backend": "NvFp4MoeBackend.MARLIN"
+        },
+        {
+          "name": "language_model.model.layers.35.self_attn.qkv_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.35.self_attn.o_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.35.mlp.shared_expert.gate_up_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.35.mlp.shared_expert.down_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.35.mlp.experts.routed_experts",
+          "method": "ModelOptNvFp4FusedMoE",
+          "use_a16": true,
+          "backend": "NvFp4MoeBackend.MARLIN"
+        },
+        {
+          "name": "language_model.model.layers.36.linear_attn.in_proj_qkvz",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.36.linear_attn.in_proj_ba",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.36.linear_attn.out_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.36.mlp.shared_expert.gate_up_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.36.mlp.shared_expert.down_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.36.mlp.experts.routed_experts",
+          "method": "ModelOptNvFp4FusedMoE",
+          "use_a16": true,
+          "backend": "NvFp4MoeBackend.MARLIN"
+        },
+        {
+          "name": "language_model.model.layers.37.linear_attn.in_proj_qkvz",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.37.linear_attn.in_proj_ba",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.37.linear_attn.out_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.37.mlp.shared_expert.gate_up_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.37.mlp.shared_expert.down_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.37.mlp.experts.routed_experts",
+          "method": "ModelOptNvFp4FusedMoE",
+          "use_a16": true,
+          "backend": "NvFp4MoeBackend.MARLIN"
+        },
+        {
+          "name": "language_model.model.layers.38.linear_attn.in_proj_qkvz",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.38.linear_attn.in_proj_ba",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.38.linear_attn.out_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.38.mlp.shared_expert.gate_up_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.38.mlp.shared_expert.down_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.38.mlp.experts.routed_experts",
+          "method": "ModelOptNvFp4FusedMoE",
+          "use_a16": true,
+          "backend": "NvFp4MoeBackend.MARLIN"
+        },
+        {
+          "name": "language_model.model.layers.39.self_attn.qkv_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.39.self_attn.o_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.39.mlp.shared_expert.gate_up_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.39.mlp.shared_expert.down_proj",
+          "method": "ModelOptLinearMethod",
+          "backend": "MarlinNvFp4LinearKernel"
+        },
+        {
+          "name": "language_model.model.layers.39.mlp.experts.routed_experts",
+          "method": "ModelOptNvFp4FusedMoE",
+          "use_a16": true,
+          "backend": "NvFp4MoeBackend.MARLIN"
+        }
+      ],
+      "marlin_canonical_order": true,
+      "allocated_bytes": 91200884736,
+      "reserved_bytes": 91341455360,
+      "peak_allocated_bytes": 91862335488,
+      "peak_reserved_bytes": 92203384832,
+      "checkpoint_loader_compatibility": {
+        "checkpoint": "RangerX/Qwen3.6-35B-REAP-Pruned-ratio-0.2",
+        "revision": "3df0df7fcc715b6b1e59d4a61bebf101dad2d676",
+        "source_prefix": "model.language_model.visual.",
+        "mapped_prefix": "visual.",
+        "text_weights_unchanged": true
+      }
+    }
+  ]
+}

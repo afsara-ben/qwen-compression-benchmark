@@ -1,0 +1,318 @@
+{
+  "qwen3_30b": {
+    "niah_single_2": {
+      "directory": "qwen3_30b/niah_single_2",
+      "files": {
+        "dataset_dict.json": "24761d3c08510c22918dfca6bc94100b9e5cff3fa323b34f2cc11916fcf69064",
+        "provenance.json": "ceef498259a1a5380b8a649120d94cb268c22a30e24b42919126e7b984f68b40",
+        "test/data-00000-of-00001.arrow": "85e2ac22b7d9ae61797fbe95fc86ff4b543a4a82c66f7c9151c4b96e370c2413",
+        "test/dataset_info.json": "7b2239ec01a0304654781f3d213125fdf83d896b9021c3fdef04a7457fd8f7ab",
+        "test/state.json": "0e2f69057ded1b894660082840b8c3a04b4a1a41983281b2f7aecd14b8f90ada"
+      },
+      "digest": "6f059b1a617082cf965d87f95de68e5f8f7341e7ebfc8365dc07836342a8d637",
+      "recipe": "ruler-32768-reserve256-seed17-v1"
+    },
+    "ruler_cwe": {
+      "directory": "qwen3_30b/ruler_cwe",
+      "files": {
+        "dataset_dict.json": "24761d3c08510c22918dfca6bc94100b9e5cff3fa323b34f2cc11916fcf69064",
+        "provenance.json": "78575f7498f3edc276c15cd4a7fb9038b516400aaa79d962f15549c014084b3d",
+        "test/data-00000-of-00001.arrow": "4a4b44e4c5647f7754d68aab01e77c633fcefe19ecd2cf9ed89fb5baff9613b2",
+        "test/dataset_info.json": "346747bcd837afd1e1e2f83abceaf84b8a08fe1e3f91554f64039fd42b247ba2",
+        "test/state.json": "77171d785f2cae134562667e7b5ed92adb269333c45678fc83983eb5b030ccf9"
+      },
+      "digest": "2738300adffbc1b08bb6399a356e2d0014a5c68dad7beb5a364f7c4b6b3a07c6",
+      "recipe": "ruler-32768-reserve256-seed17-v1"
+    },
+    "ruler_fwe": {
+      "directory": "qwen3_30b/ruler_fwe",
+      "files": {
+        "dataset_dict.json": "24761d3c08510c22918dfca6bc94100b9e5cff3fa323b34f2cc11916fcf69064",
+        "provenance.json": "9fea3bcd45ec52699206f13dcfa972a302d0790e3d14be3895cb5af701d14b78",
+        "test/data-00000-of-00001.arrow": "855634d2ba244b87d39999d41798972e75130168eb6910931a3694e805330734",
+        "test/dataset_info.json": "7b2239ec01a0304654781f3d213125fdf83d896b9021c3fdef04a7457fd8f7ab",
+        "test/state.json": "f6c6a2cdafe6962ce043b83298c9a8650d4afe9a833a872e369e2f89eb001750"
+      },
+      "digest": "56f09de2f8e840dcd3b48b1ef9a198e6f0541f6d7743fe17c407d9da1cddf0e0",
+      "recipe": "ruler-32768-reserve256-seed17-v1"
+    },
+    "niah_single_3": {
+      "directory": "qwen3_30b/niah_single_3",
+      "files": {
+        "dataset_dict.json": "24761d3c08510c22918dfca6bc94100b9e5cff3fa323b34f2cc11916fcf69064",
+        "provenance.json": "7fe3ba43c844b6d13c46660f8ca9103f665308c295d1eaac6272bd5a31204f75",
+        "test/data-00000-of-00001.arrow": "63c98a566e9ab8710048c5a2b6aea7aa48f56306707038925f64e285f2c882b3",
+        "test/dataset_info.json": "7b2239ec01a0304654781f3d213125fdf83d896b9021c3fdef04a7457fd8f7ab",
+        "test/state.json": "bd6f620ef01b6862346b42148a40d64f9dd5ec0cff677289ac7107da72051d03"
+      },
+      "digest": "c23ab9ecf79af0c50e80916e6ca62df35fe4e28f2c86b11ad0d4197df1c66f08",
+      "recipe": "ruler-32768-reserve256-seed17-v1"
+    },
+    "ruler_vt": {
+      "directory": "qwen3_30b/ruler_vt",
+      "files": {
+        "dataset_dict.json": "24761d3c08510c22918dfca6bc94100b9e5cff3fa323b34f2cc11916fcf69064",
+        "provenance.json": "180508b56e474c5ca5e41cf6158750b716760f4106d89c3da1aec53cc9f2f7b4",
+        "test/data-00000-of-00001.arrow": "8289028d6457bcc75e6457371096750272587ceb38468ebc7f70e556baae483f",
+        "test/dataset_info.json": "7b2239ec01a0304654781f3d213125fdf83d896b9021c3fdef04a7457fd8f7ab",
+        "test/state.json": "9bf75f17c7acea392a2ffe979b6acfae058dd23eeebba38e2972cc9aaeaa7bec"
+      },
+      "digest": "5b4a54849bb5950a25ab14a2e702d88396a23440adbafd7a26f53db317ceb216",
+      "recipe": "ruler-32768-reserve256-seed17-v1"
+    },
+    "ruler_qa_squad": {
+      "directory": "qwen3_30b/ruler_qa_squad",
+      "files": {
+        "dataset_dict.json": "24761d3c08510c22918dfca6bc94100b9e5cff3fa323b34f2cc11916fcf69064",
+        "provenance.json": "24b97685ef9ef64b97f4c508fb59bdc7c361ddaf1765af1f52736872dac45666",
+        "test/data-00000-of-00001.arrow": "075ec7f28980685268d0dfc0b448eae29571afe29f67c4dc91afe4d31df8296f",
+        "test/dataset_info.json": "7b2239ec01a0304654781f3d213125fdf83d896b9021c3fdef04a7457fd8f7ab",
+        "test/state.json": "41d31d9766579cc4e698d48b3b5ded7732d6c88f4f46d2067d71fae6f59f4859"
+      },
+      "digest": "95c5a200b003f6122b13e8068877fd6b147c3a80bd7fe48b6e2b875218554fb3",
+      "recipe": "ruler-32768-reserve256-seed17-v1"
+    },
+    "ruler_qa_hotpot": {
+      "directory": "qwen3_30b/ruler_qa_hotpot",
+      "files": {
+        "dataset_dict.json": "24761d3c08510c22918dfca6bc94100b9e5cff3fa323b34f2cc11916fcf69064",
+        "provenance.json": "74e955722c9450bd1a1dfb5a4821cb987a732a342d62c9fcab35e44585871665",
+        "test/data-00000-of-00001.arrow": "4e0aea4f61427052ac9d0f9e82b61dd7b34a5c0f3d92448dec52ab56c4fe7290",
+        "test/dataset_info.json": "7b2239ec01a0304654781f3d213125fdf83d896b9021c3fdef04a7457fd8f7ab",
+        "test/state.json": "29f6506298cf47418fd2a4b57ed2871d8e529cbfa331992637a35087aaafa0fe"
+      },
+      "digest": "40f436954188bf657fcd2d4ccbf37a871ba7dca0d4cc7a78e62340ac9b284439",
+      "recipe": "ruler-32768-reserve256-seed17-v1"
+    },
+    "niah_multiquery": {
+      "directory": "qwen3_30b/niah_multiquery",
+      "files": {
+        "dataset_dict.json": "24761d3c08510c22918dfca6bc94100b9e5cff3fa323b34f2cc11916fcf69064",
+        "provenance.json": "50525ee5286dd1bc86c8b1898c46439ff4ce176de3a322630a694b6ad7b40543",
+        "test/data-00000-of-00001.arrow": "299bb5de43b7687ede240450d7c91542aa0ff2577011db04733a472d1b34de24",
+        "test/dataset_info.json": "7b2239ec01a0304654781f3d213125fdf83d896b9021c3fdef04a7457fd8f7ab",
+        "test/state.json": "c124004a334f477a349688266b7e3c037044a0bd27e762635ba656ebeea20f4d"
+      },
+      "digest": "549c03f558913c79acc17144c99ed1068fe4a969e1a822129664b93bfb58c942",
+      "recipe": "ruler-32768-reserve256-seed17-v1"
+    },
+    "niah_multikey_3": {
+      "directory": "qwen3_30b/niah_multikey_3",
+      "files": {
+        "dataset_dict.json": "24761d3c08510c22918dfca6bc94100b9e5cff3fa323b34f2cc11916fcf69064",
+        "provenance.json": "b6416a9a06d946c1db736c7b8e59e0179017179ff009c868693f49b447f0f612",
+        "test/data-00000-of-00001.arrow": "4cad99cb2d142dc375b52a2dd7a1c8c92cde145d1694312cfd4783e98fd9a184",
+        "test/dataset_info.json": "7b2239ec01a0304654781f3d213125fdf83d896b9021c3fdef04a7457fd8f7ab",
+        "test/state.json": "7ef569c67efdf15f7d8162cf2e8ec67b5b157084800d9f389d2ff56508f22a7f"
+      },
+      "digest": "55234e08e0a541f7bd87b892af34771059d7def14709052c68ca4b06a16d1d72",
+      "recipe": "ruler-32768-reserve256-seed17-v1"
+    },
+    "niah_single_1": {
+      "directory": "qwen3_30b/niah_single_1",
+      "files": {
+        "dataset_dict.json": "24761d3c08510c22918dfca6bc94100b9e5cff3fa323b34f2cc11916fcf69064",
+        "provenance.json": "962c0cbb4cf0ed28f48fea06e3c40692cd861dae8b3344dfc7c531f656196aff",
+        "test/data-00000-of-00001.arrow": "10f1f76a55f4286601018024e536b0161e62334c4d9d910d915b8e97fd38089a",
+        "test/dataset_info.json": "7b2239ec01a0304654781f3d213125fdf83d896b9021c3fdef04a7457fd8f7ab",
+        "test/state.json": "68d779231b08ede1b700ad6f67a074e4cf7d74e49fb1416f39f7b38fec60e946"
+      },
+      "digest": "38c6271e83ab3bd130cf19338758b06416f0af694b7d681341f89ec06d8b6824",
+      "recipe": "ruler-32768-reserve256-seed17-v1"
+    },
+    "niah_multikey_1": {
+      "directory": "qwen3_30b/niah_multikey_1",
+      "files": {
+        "dataset_dict.json": "24761d3c08510c22918dfca6bc94100b9e5cff3fa323b34f2cc11916fcf69064",
+        "provenance.json": "9fbaba25282681e44bcde071753b12eced5bec3e70c9dab1b0047c7eccfc347e",
+        "test/data-00000-of-00001.arrow": "ab1cbf64b068fa2e1140574e41ef1fa304dddf8ad56950728dff1957c6d0425a",
+        "test/dataset_info.json": "7b2239ec01a0304654781f3d213125fdf83d896b9021c3fdef04a7457fd8f7ab",
+        "test/state.json": "c7b117c1846ad6bfee17bd664151b4198db3541a8b27d7f717ec4d5defb09e28"
+      },
+      "digest": "ae5bcac1ac22a42c3fe56fee286fd29890d7547d6f0621933fe9b3187fc27986",
+      "recipe": "ruler-32768-reserve256-seed17-v1"
+    },
+    "niah_multivalue": {
+      "directory": "qwen3_30b/niah_multivalue",
+      "files": {
+        "dataset_dict.json": "24761d3c08510c22918dfca6bc94100b9e5cff3fa323b34f2cc11916fcf69064",
+        "provenance.json": "09122f64cea9ebef98f0623227ac112e2c202e8ed90d65aeb1647ccf485c7023",
+        "test/data-00000-of-00001.arrow": "1b27e44cf83588b5e080094c65f093f63b59fea8be452a973e241ea11fb6ca57",
+        "test/dataset_info.json": "7b2239ec01a0304654781f3d213125fdf83d896b9021c3fdef04a7457fd8f7ab",
+        "test/state.json": "c56b14788c158be87a1c4ad7ef80b0558f4b15ca329ca51955705abbae4d30b2"
+      },
+      "digest": "c6368b148a3eeb889265d5a7c17596e838f5a8f27c1532cd51cbdf9b525af6ab",
+      "recipe": "ruler-32768-reserve256-seed17-v1"
+    },
+    "niah_multikey_2": {
+      "directory": "qwen3_30b/niah_multikey_2",
+      "files": {
+        "dataset_dict.json": "24761d3c08510c22918dfca6bc94100b9e5cff3fa323b34f2cc11916fcf69064",
+        "provenance.json": "b1628b4f32f0a4b03d9713c98bbbb06aa353027784f4c74db584d76374580073",
+        "test/data-00000-of-00001.arrow": "7837e969e2ad66a81c13185d6c1c2002cd56b07b11d8c269fe39a2ce43128564",
+        "test/dataset_info.json": "7b2239ec01a0304654781f3d213125fdf83d896b9021c3fdef04a7457fd8f7ab",
+        "test/state.json": "361c29e2a12cf12d7713bf06e104a6e65a3ecd5fa3087dea0334fecc68afa488"
+      },
+      "digest": "3a7dfa8d508b23a1d298cd1b900ab5053f303579711568210b1e0d1916561af8",
+      "recipe": "ruler-32768-reserve256-seed17-v1"
+    }
+  },
+  "qwen3_6_35b": {
+    "ruler_cwe": {
+      "directory": "qwen3_6_35b/ruler_cwe",
+      "files": {
+        "dataset_dict.json": "24761d3c08510c22918dfca6bc94100b9e5cff3fa323b34f2cc11916fcf69064",
+        "provenance.json": "cd086748c1c9ebdcb890a01c23e0b2c1cc0fe09acf5b7d936a7501b723cae043",
+        "test/data-00000-of-00001.arrow": "d497afd566699fa6d2415df5c4952da77d806461ac877861997a6fafaaa81d2f",
+        "test/dataset_info.json": "346747bcd837afd1e1e2f83abceaf84b8a08fe1e3f91554f64039fd42b247ba2",
+        "test/state.json": "666a21e7c5f5e4e6e5b1a2507a1484292594e652cd7ae06b0ba5e1280d9d249c"
+      },
+      "digest": "58a41b6f9ebba7148c783bd7cc70232e45a06834f3a9a23a1a5c6571568c4137",
+      "recipe": "ruler-32768-reserve256-seed17-v1"
+    },
+    "niah_single_2": {
+      "directory": "qwen3_6_35b/niah_single_2",
+      "files": {
+        "dataset_dict.json": "24761d3c08510c22918dfca6bc94100b9e5cff3fa323b34f2cc11916fcf69064",
+        "provenance.json": "48f02d5f347604a773cac72cc72facc61b36055d24c68358e8c224f69fb15890",
+        "test/data-00000-of-00001.arrow": "e56d36e6f4ce45b89b5220cd60f3e87358dc055d3a3d702f9775a421c5d8e516",
+        "test/dataset_info.json": "7b2239ec01a0304654781f3d213125fdf83d896b9021c3fdef04a7457fd8f7ab",
+        "test/state.json": "626ba323c05655b9251a58168a20fc812f40d53cf833f55a6a4a1d048d81a71b"
+      },
+      "digest": "1e608e2b128a4570d0980ac9baffc296f4bf4f11d7c68a0138cef20b3f4b3580",
+      "recipe": "ruler-32768-reserve256-seed17-v1"
+    },
+    "ruler_qa_squad": {
+      "directory": "qwen3_6_35b/ruler_qa_squad",
+      "files": {
+        "dataset_dict.json": "24761d3c08510c22918dfca6bc94100b9e5cff3fa323b34f2cc11916fcf69064",
+        "provenance.json": "46c047dbcfc2c9f3be161622258df69fc954d6cbe964debc0866f8ec1b2cc663",
+        "test/data-00000-of-00001.arrow": "f920458967dae1452ef1828cdf0bad0e9983c7bc07a24e497b0e3d14759017ba",
+        "test/dataset_info.json": "7b2239ec01a0304654781f3d213125fdf83d896b9021c3fdef04a7457fd8f7ab",
+        "test/state.json": "30b62ce37a547f6292bf46f47d159de9fd308481759dc46a7b848a061843b838"
+      },
+      "digest": "b7ba2671cc1f0bc6a4e3a42e1d0f1a952e79351a84181fa1f3333181e1b25497",
+      "recipe": "ruler-32768-reserve256-seed17-v1"
+    },
+    "niah_single_3": {
+      "directory": "qwen3_6_35b/niah_single_3",
+      "files": {
+        "dataset_dict.json": "24761d3c08510c22918dfca6bc94100b9e5cff3fa323b34f2cc11916fcf69064",
+        "provenance.json": "6a9662cddfa65e4ec0fbf92c4e39e55dfe419b237714ed76be55fccbc0edf493",
+        "test/data-00000-of-00001.arrow": "3363e0fcf405235ed150490bbad9934956d4860ae4e8ec177348708f71c6c7ed",
+        "test/dataset_info.json": "7b2239ec01a0304654781f3d213125fdf83d896b9021c3fdef04a7457fd8f7ab",
+        "test/state.json": "e74f34c0501f1faeeb9fffc3b89ae2e7f4bcf92ace8ebf6a5aa62f53033f653e"
+      },
+      "digest": "0fca915058cd65dbccf096b786c40faa433c2d81c6189d8fcf63351afc193477",
+      "recipe": "ruler-32768-reserve256-seed17-v1"
+    },
+    "ruler_qa_hotpot": {
+      "directory": "qwen3_6_35b/ruler_qa_hotpot",
+      "files": {
+        "dataset_dict.json": "24761d3c08510c22918dfca6bc94100b9e5cff3fa323b34f2cc11916fcf69064",
+        "provenance.json": "35080a158a0875c7dd6002f6495e8a4a4e35d3b8521d49474c18ad3de8518bfd",
+        "test/data-00000-of-00001.arrow": "64781361ac36ee3966a82ba677dcafe5fab359bf63b524b0ddcdddd23573ffc1",
+        "test/dataset_info.json": "7b2239ec01a0304654781f3d213125fdf83d896b9021c3fdef04a7457fd8f7ab",
+        "test/state.json": "5ad6ae787a59455d5c42d84498f56bb5b4632b73bfca27d5b59569a2094e8ca7"
+      },
+      "digest": "40514c794fd951ad89062b79156e2c0658a082f28927deb324bb311753829ddf",
+      "recipe": "ruler-32768-reserve256-seed17-v1"
+    },
+    "niah_multikey_1": {
+      "directory": "qwen3_6_35b/niah_multikey_1",
+      "files": {
+        "dataset_dict.json": "24761d3c08510c22918dfca6bc94100b9e5cff3fa323b34f2cc11916fcf69064",
+        "provenance.json": "0c6b91c930c9187e4ee20cc7c713072cd0e89d85a7ca3dfe66f8c6f3008db7ba",
+        "test/data-00000-of-00001.arrow": "5d5de903f957b1695747b13287b7b746950a9218e8ea0dec018dec7ef992806a",
+        "test/dataset_info.json": "7b2239ec01a0304654781f3d213125fdf83d896b9021c3fdef04a7457fd8f7ab",
+        "test/state.json": "5de63922ef390dffdaf6e0f7c4deedb22e7d32a832869578f459ed3cac2dda65"
+      },
+      "digest": "81dcaa7f3b826fea136092e0c2c37a50677074922d92de49184df79917b71391",
+      "recipe": "ruler-32768-reserve256-seed17-v1"
+    },
+    "niah_single_1": {
+      "directory": "qwen3_6_35b/niah_single_1",
+      "files": {
+        "dataset_dict.json": "24761d3c08510c22918dfca6bc94100b9e5cff3fa323b34f2cc11916fcf69064",
+        "provenance.json": "fbc1837ee2032738ba08a55eb486611e943cd0764d231562733fe8884cc617b0",
+        "test/data-00000-of-00001.arrow": "563eed6c3582b6f80b67be906f0a70d77251f91bb0dc806235b19fcee7d9696b",
+        "test/dataset_info.json": "7b2239ec01a0304654781f3d213125fdf83d896b9021c3fdef04a7457fd8f7ab",
+        "test/state.json": "601266bb2568fe9ba985586e24afb577db6adc2410e1668ea39e7ed9966cd5ba"
+      },
+      "digest": "0901f90feef5292c3b900fa481b83cd1afbbfbd38a69a0eadfa2ac62c54ebdd3",
+      "recipe": "ruler-32768-reserve256-seed17-v1"
+    },
+    "niah_multiquery": {
+      "directory": "qwen3_6_35b/niah_multiquery",
+      "files": {
+        "dataset_dict.json": "24761d3c08510c22918dfca6bc94100b9e5cff3fa323b34f2cc11916fcf69064",
+        "provenance.json": "3bc89d3eb216a672a00d08b2805737a394db9ddaf3e41bc4660c06e34e70db7c",
+        "test/data-00000-of-00001.arrow": "d16ff54937c5fd4b3bef91ab0bc6dadcb9982527fb1572ea827020ac3c4112ba",
+        "test/dataset_info.json": "7b2239ec01a0304654781f3d213125fdf83d896b9021c3fdef04a7457fd8f7ab",
+        "test/state.json": "9a0aef2ac627d4853ad3ae7916b68bde94d62c736e678f501133e407aef5226c"
+      },
+      "digest": "d7be5832b69196a1d6dd6bbd8f54fbd2b3bf63c2e9ebd91cdd7eeb04010f17ef",
+      "recipe": "ruler-32768-reserve256-seed17-v1"
+    },
+    "niah_multikey_2": {
+      "directory": "qwen3_6_35b/niah_multikey_2",
+      "files": {
+        "dataset_dict.json": "24761d3c08510c22918dfca6bc94100b9e5cff3fa323b34f2cc11916fcf69064",
+        "provenance.json": "9c406c4ba32a2ebb449c7410514bb328f9d91d409a8e813d7ee7718b16014440",
+        "test/data-00000-of-00001.arrow": "6874876337e21070888fd6931754b13946f8d423f45f050e363d8e2a0e3eb5c6",
+        "test/dataset_info.json": "7b2239ec01a0304654781f3d213125fdf83d896b9021c3fdef04a7457fd8f7ab",
+        "test/state.json": "9ce6dce1dc8525f2ff8f16c539fd3325f80afb6a86a197562e334919fce52d15"
+      },
+      "digest": "0233e8cd83872bff6377f23836001e0472a472611d6885fbd9dc6f2a65721e1a",
+      "recipe": "ruler-32768-reserve256-seed17-v1"
+    },
+    "ruler_fwe": {
+      "directory": "qwen3_6_35b/ruler_fwe",
+      "files": {
+        "dataset_dict.json": "24761d3c08510c22918dfca6bc94100b9e5cff3fa323b34f2cc11916fcf69064",
+        "provenance.json": "3ab40c5d8f2c1729732d4067646f798b9511e3efeda61b8b3683a1401d7773dc",
+        "test/data-00000-of-00001.arrow": "ef3064b7739ca33980837dc05f36ccddfb584cbfb6aa1cb9de51c305775c05d4",
+        "test/dataset_info.json": "7b2239ec01a0304654781f3d213125fdf83d896b9021c3fdef04a7457fd8f7ab",
+        "test/state.json": "023762408ad2149964f3f442b278e2c8be1676d5667c75f04bf7092d51659fe8"
+      },
+      "digest": "97c9f4a10eeef591f09926fd2a929596a4a6d7845f5c044b492e5860cedfb6ce",
+      "recipe": "ruler-32768-reserve256-seed17-v1"
+    },
+    "niah_multivalue": {
+      "directory": "qwen3_6_35b/niah_multivalue",
+      "files": {
+        "dataset_dict.json": "24761d3c08510c22918dfca6bc94100b9e5cff3fa323b34f2cc11916fcf69064",
+        "provenance.json": "aab952915f6f2d483a913f93ee79e1a5a7dc94545dc0d9850f876182f9f884c0",
+        "test/data-00000-of-00001.arrow": "a164e3f71c61978b2420beeac19633305c566f902af791ec21470e6a5baed146",
+        "test/dataset_info.json": "7b2239ec01a0304654781f3d213125fdf83d896b9021c3fdef04a7457fd8f7ab",
+        "test/state.json": "a5e039bb0e934be370ad98bd8256cf979c3582656fa9ae9d3461c20c6bfafeaa"
+      },
+      "digest": "8e81eaec8608413810302cc11312d0384876cdebb9febb2bef6fb885a70320c9",
+      "recipe": "ruler-32768-reserve256-seed17-v1"
+    },
+    "niah_multikey_3": {
+      "directory": "qwen3_6_35b/niah_multikey_3",
+      "files": {
+        "dataset_dict.json": "24761d3c08510c22918dfca6bc94100b9e5cff3fa323b34f2cc11916fcf69064",
+        "provenance.json": "cb51ad41515362272f23084143423db364065385e4909f770420e5406fec1761",
+        "test/data-00000-of-00001.arrow": "405063a0d272dcdeebd26cdc4a8255f68389160fea1b4ac4fd0a8116aa4f9d01",
+        "test/dataset_info.json": "7b2239ec01a0304654781f3d213125fdf83d896b9021c3fdef04a7457fd8f7ab",
+        "test/state.json": "babbb9757cbebc09f60ffe5f3caafba28de2b4045a25188dba160d972ffe71ce"
+      },
+      "digest": "91ab253e6fd4ca66561f1c2089c1a23ebbd961fbe7492e8760eb0446c6fa75d9",
+      "recipe": "ruler-32768-reserve256-seed17-v1"
+    },
+    "ruler_vt": {
+      "directory": "qwen3_6_35b/ruler_vt",
+      "files": {
+        "dataset_dict.json": "24761d3c08510c22918dfca6bc94100b9e5cff3fa323b34f2cc11916fcf69064",
+        "provenance.json": "d7b7ddd775c0d412566a6da0b02d3ee4b44a68a17487225e8ee93a0adf8043f8",
+        "test/data-00000-of-00001.arrow": "ec2f8c1b0acf9bb8cbecc80ab995efa4e1c8fa4cb34d9c4f78878d5f04a312f9",
+        "test/dataset_info.json": "7b2239ec01a0304654781f3d213125fdf83d896b9021c3fdef04a7457fd8f7ab",
+        "test/state.json": "11a85d965fd4eb8428d8dcc2170c1280b77ab7602a3ce4d6ca8e8b833a28d744"
+      },
+      "digest": "5494e0d2881b549f952b71c943d9c94f6419213885820a578fae8ae316a872e2",
+      "recipe": "ruler-32768-reserve256-seed17-v1"
+    }
+  }
+}

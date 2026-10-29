@@ -1,0 +1,327 @@
+{
+  "results": [
+    {
+      "pid": 11524,
+      "gpu": "GPU-6fbb1951-e696-ab9c-dd7a-bc0337d7b790",
+      "non_cuda_parameters": [],
+      "parameter_dtypes": {
+        "torch.bfloat16": 30532122624
+      },
+      "weight_storage_bytes": 61064245248,
+      "model_buffer_bytes": 67109632,
+      "cache_storage_bytes": 29080682496,
+      "cache_groups": [
+        {
+          "spec": "FullAttentionSpec",
+          "block_size": 16,
+          "layer_count": 48,
+          "dtype": "torch.bfloat16",
+          "page_bytes": 32768
+        }
+      ],
+      "cache_blocks": 18489,
+      "kv_dtype": "auto",
+      "experts": [
+        {
+          "name": "model.layers.0.mlp.experts.routed_experts",
+          "count": 128
+        },
+        {
+          "name": "model.layers.1.mlp.experts.routed_experts",
+          "count": 128
+        },
+        {
+          "name": "model.layers.2.mlp.experts.routed_experts",
+          "count": 128
+        },
+        {
+          "name": "model.layers.3.mlp.experts.routed_experts",
+          "count": 128
+        },
+        {
+          "name": "model.layers.4.mlp.experts.routed_experts",
+          "count": 128
+        },
+        {
+          "name": "model.layers.5.mlp.experts.routed_experts",
+          "count": 128
+        },
+        {
+          "name": "model.layers.6.mlp.experts.routed_experts",
+          "count": 128
+        },
+        {
+          "name": "model.layers.7.mlp.experts.routed_experts",
+          "count": 128
+        },
+        {
+          "name": "model.layers.8.mlp.experts.routed_experts",
+          "count": 128
+        },
+        {
+          "name": "model.layers.9.mlp.experts.routed_experts",
+          "count": 128
+        },
+        {
+          "name": "model.layers.10.mlp.experts.routed_experts",
+          "count": 128
+        },
+        {
+          "name": "model.layers.11.mlp.experts.routed_experts",
+          "count": 128
+        },
+        {
+          "name": "model.layers.12.mlp.experts.routed_experts",
+          "count": 128
+        },
+        {
+          "name": "model.layers.13.mlp.experts.routed_experts",
+          "count": 128
+        },
+        {
+          "name": "model.layers.14.mlp.experts.routed_experts",
+          "count": 128
+        },
+        {
+          "name": "model.layers.15.mlp.experts.routed_experts",
+          "count": 128
+        },
+        {
+          "name": "model.layers.16.mlp.experts.routed_experts",
+          "count": 128
+        },
+        {
+          "name": "model.layers.17.mlp.experts.routed_experts",
+          "count": 128
+        },
+        {
+          "name": "model.layers.18.mlp.experts.routed_experts",
+          "count": 128
+        },
+        {
+          "name": "model.layers.19.mlp.experts.routed_experts",
+          "count": 128
+        },
+        {
+          "name": "model.layers.20.mlp.experts.routed_experts",
+          "count": 128
+        },
+        {
+          "name": "model.layers.21.mlp.experts.routed_experts",
+          "count": 128
+        },
+        {
+          "name": "model.layers.22.mlp.experts.routed_experts",
+          "count": 128
+        },
+        {
+          "name": "model.layers.23.mlp.experts.routed_experts",
+          "count": 128
+        },
+        {
+          "name": "model.layers.24.mlp.experts.routed_experts",
+          "count": 128
+        },
+        {
+          "name": "model.layers.25.mlp.experts.routed_experts",
+          "count": 128
+        },
+        {
+          "name": "model.layers.26.mlp.experts.routed_experts",
+          "count": 128
+        },
+        {
+          "name": "model.layers.27.mlp.experts.routed_experts",
+          "count": 128
+        },
+        {
+          "name": "model.layers.28.mlp.experts.routed_experts",
+          "count": 128
+        },
+        {
+          "name": "model.layers.29.mlp.experts.routed_experts",
+          "count": 128
+        },
+        {
+          "name": "model.layers.30.mlp.experts.routed_experts",
+          "count": 128
+        },
+        {
+          "name": "model.layers.31.mlp.experts.routed_experts",
+          "count": 128
+        },
+        {
+          "name": "model.layers.32.mlp.experts.routed_experts",
+          "count": 128
+        },
+        {
+          "name": "model.layers.33.mlp.experts.routed_experts",
+          "count": 128
+        },
+        {
+          "name": "model.layers.34.mlp.experts.routed_experts",
+          "count": 128
+        },
+        {
+          "name": "model.layers.35.mlp.experts.routed_experts",
+          "count": 128
+        },
+        {
+          "name": "model.layers.36.mlp.experts.routed_experts",
+          "count": 128
+        },
+        {
+          "name": "model.layers.37.mlp.experts.routed_experts",
+          "count": 128
+        },
+        {
+          "name": "model.layers.38.mlp.experts.routed_experts",
+          "count": 128
+        },
+        {
+          "name": "model.layers.39.mlp.experts.routed_experts",
+          "count": 128
+        },
+        {
+          "name": "model.layers.40.mlp.experts.routed_experts",
+          "count": 128
+        },
+        {
+          "name": "model.layers.41.mlp.experts.routed_experts",
+          "count": 128
+        },
+        {
+          "name": "model.layers.42.mlp.experts.routed_experts",
+          "count": 128
+        },
+        {
+          "name": "model.layers.43.mlp.experts.routed_experts",
+          "count": 128
+        },
+        {
+          "name": "model.layers.44.mlp.experts.routed_experts",
+          "count": 128
+        },
+        {
+          "name": "model.layers.45.mlp.experts.routed_experts",
+          "count": 128
+        },
+        {
+          "name": "model.layers.46.mlp.experts.routed_experts",
+          "count": 128
+        },
+        {
+          "name": "model.layers.47.mlp.experts.routed_experts",
+          "count": 128
+        }
+      ],
+      "quantization_methods": {
+        "UnquantizedEmbeddingMethod": 2,
+        "UnquantizedLinearMethod": 144,
+        "UnquantizedFusedMoEMethod": 48
+      },
+      "kv_scales": {
+        "model.layers.0.self_attn.attn._k_scale": 1.0,
+        "model.layers.0.self_attn.attn._v_scale": 1.0,
+        "model.layers.1.self_attn.attn._k_scale": 1.0,
+        "model.layers.1.self_attn.attn._v_scale": 1.0,
+        "model.layers.2.self_attn.attn._k_scale": 1.0,
+        "model.layers.2.self_attn.attn._v_scale": 1.0,
+        "model.layers.3.self_attn.attn._k_scale": 1.0,
+        "model.layers.3.self_attn.attn._v_scale": 1.0,
+        "model.layers.4.self_attn.attn._k_scale": 1.0,
+        "model.layers.4.self_attn.attn._v_scale": 1.0,
+        "model.layers.5.self_attn.attn._k_scale": 1.0,
+        "model.layers.5.self_attn.attn._v_scale": 1.0,
+        "model.layers.6.self_attn.attn._k_scale": 1.0,
+        "model.layers.6.self_attn.attn._v_scale": 1.0,
+        "model.layers.7.self_attn.attn._k_scale": 1.0,
+        "model.layers.7.self_attn.attn._v_scale": 1.0,
+        "model.layers.8.self_attn.attn._k_scale": 1.0,
+        "model.layers.8.self_attn.attn._v_scale": 1.0,
+        "model.layers.9.self_attn.attn._k_scale": 1.0,
+        "model.layers.9.self_attn.attn._v_scale": 1.0,
+        "model.layers.10.self_attn.attn._k_scale": 1.0,
+        "model.layers.10.self_attn.attn._v_scale": 1.0,
+        "model.layers.11.self_attn.attn._k_scale": 1.0,
+        "model.layers.11.self_attn.attn._v_scale": 1.0,
+        "model.layers.12.self_attn.attn._k_scale": 1.0,
+        "model.layers.12.self_attn.attn._v_scale": 1.0,
+        "model.layers.13.self_attn.attn._k_scale": 1.0,
+        "model.layers.13.self_attn.attn._v_scale": 1.0,
+        "model.layers.14.self_attn.attn._k_scale": 1.0,
+        "model.layers.14.self_attn.attn._v_scale": 1.0,
+        "model.layers.15.self_attn.attn._k_scale": 1.0,
+        "model.layers.15.self_attn.attn._v_scale": 1.0,
+        "model.layers.16.self_attn.attn._k_scale": 1.0,
+        "model.layers.16.self_attn.attn._v_scale": 1.0,
+        "model.layers.17.self_attn.attn._k_scale": 1.0,
+        "model.layers.17.self_attn.attn._v_scale": 1.0,
+        "model.layers.18.self_attn.attn._k_scale": 1.0,
+        "model.layers.18.self_attn.attn._v_scale": 1.0,
+        "model.layers.19.self_attn.attn._k_scale": 1.0,
+        "model.layers.19.self_attn.attn._v_scale": 1.0,
+        "model.layers.20.self_attn.attn._k_scale": 1.0,
+        "model.layers.20.self_attn.attn._v_scale": 1.0,
+        "model.layers.21.self_attn.attn._k_scale": 1.0,
+        "model.layers.21.self_attn.attn._v_scale": 1.0,
+        "model.layers.22.self_attn.attn._k_scale": 1.0,
+        "model.layers.22.self_attn.attn._v_scale": 1.0,
+        "model.layers.23.self_attn.attn._k_scale": 1.0,
+        "model.layers.23.self_attn.attn._v_scale": 1.0,
+        "model.layers.24.self_attn.attn._k_scale": 1.0,
+        "model.layers.24.self_attn.attn._v_scale": 1.0,
+        "model.layers.25.self_attn.attn._k_scale": 1.0,
+        "model.layers.25.self_attn.attn._v_scale": 1.0,
+        "model.layers.26.self_attn.attn._k_scale": 1.0,
+        "model.layers.26.self_attn.attn._v_scale": 1.0,
+        "model.layers.27.self_attn.attn._k_scale": 1.0,
+        "model.layers.27.self_attn.attn._v_scale": 1.0,
+        "model.layers.28.self_attn.attn._k_scale": 1.0,
+        "model.layers.28.self_attn.attn._v_scale": 1.0,
+        "model.layers.29.self_attn.attn._k_scale": 1.0,
+        "model.layers.29.self_attn.attn._v_scale": 1.0,
+        "model.layers.30.self_attn.attn._k_scale": 1.0,
+        "model.layers.30.self_attn.attn._v_scale": 1.0,
+        "model.layers.31.self_attn.attn._k_scale": 1.0,
+        "model.layers.31.self_attn.attn._v_scale": 1.0,
+        "model.layers.32.self_attn.attn._k_scale": 1.0,
+        "model.layers.32.self_attn.attn._v_scale": 1.0,
+        "model.layers.33.self_attn.attn._k_scale": 1.0,
+        "model.layers.33.self_attn.attn._v_scale": 1.0,
+        "model.layers.34.self_attn.attn._k_scale": 1.0,
+        "model.layers.34.self_attn.attn._v_scale": 1.0,
+        "model.layers.35.self_attn.attn._k_scale": 1.0,
+        "model.layers.35.self_attn.attn._v_scale": 1.0,
+        "model.layers.36.self_attn.attn._k_scale": 1.0,
+        "model.layers.36.self_attn.attn._v_scale": 1.0,
+        "model.layers.37.self_attn.attn._k_scale": 1.0,
+        "model.layers.37.self_attn.attn._v_scale": 1.0,
+        "model.layers.38.self_attn.attn._k_scale": 1.0,
+        "model.layers.38.self_attn.attn._v_scale": 1.0,
+        "model.layers.39.self_attn.attn._k_scale": 1.0,
+        "model.layers.39.self_attn.attn._v_scale": 1.0,
+        "model.layers.40.self_attn.attn._k_scale": 1.0,
+        "model.layers.40.self_attn.attn._v_scale": 1.0,
+        "model.layers.41.self_attn.attn._k_scale": 1.0,
+        "model.layers.41.self_attn.attn._v_scale": 1.0,
+        "model.layers.42.self_attn.attn._k_scale": 1.0,
+        "model.layers.42.self_attn.attn._v_scale": 1.0,
+        "model.layers.43.self_attn.attn._k_scale": 1.0,
+        "model.layers.43.self_attn.attn._v_scale": 1.0,
+        "model.layers.44.self_attn.attn._k_scale": 1.0,
+        "model.layers.44.self_attn.attn._v_scale": 1.0,
+        "model.layers.45.self_attn.attn._k_scale": 1.0,
+        "model.layers.45.self_attn.attn._v_scale": 1.0,
+        "model.layers.46.self_attn.attn._k_scale": 1.0,
+        "model.layers.46.self_attn.attn._v_scale": 1.0,
+        "model.layers.47.self_attn.attn._k_scale": 1.0,
+        "model.layers.47.self_attn.attn._v_scale": 1.0
+      },
+      "allocated_bytes": 91665341952,
+      "reserved_bytes": 91890909184,
+      "peak_allocated_bytes": 92469405184,
+      "peak_reserved_bytes": 94306828288
+    }
+  ]
+}

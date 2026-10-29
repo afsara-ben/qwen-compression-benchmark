@@ -1,0 +1,15 @@
+vllm==0.32.0
+torch==2.13.0
+transformers==5.19.0
+flashinfer-python==0.7.0.post1
+cuda-toolkit[nvcc]==13.0.3.0
+evaluate==0.4.6
+nltk==3.10.4
+langdetect
+immutabledict
+psutil==7.2.2
+requests
+tenacity
+tiktoken
+openai
+pytest

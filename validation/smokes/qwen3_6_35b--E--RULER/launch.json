@@ -1,0 +1,111 @@
+{
+  "command": [
+    "/scratch/hys4qm/qbench-runtime/venv/bin/python",
+    "-m",
+    "vllm.entrypoints.openai.api_server",
+    "--model",
+    "/scratch/hys4qm/qbench-acceptance/work/models/qwen3_6_35b/reap",
+    "--tokenizer",
+    "/scratch/hys4qm/qbench-acceptance/work/models/qwen3_6_35b/base",
+    "--served-model-name",
+    "quality-model",
+    "--host",
+    "127.0.0.1",
+    "--port",
+    "39979",
+    "--dtype",
+    "bfloat16",
+    "--seed",
+    "17",
+    "--generation-config",
+    "vllm",
+    "--tensor-parallel-size",
+    "1",
+    "--pipeline-parallel-size",
+    "1",
+    "--data-parallel-size",
+    "1",
+    "--distributed-executor-backend",
+    "uni",
+    "--no-enable-expert-parallel",
+    "--max-model-len",
+    "32768",
+    "--max-num-seqs",
+    "4",
+    "--max-num-batched-tokens",
+    "8192",
+    "--attention-config",
+    "{\"backend\":\"FLASHINFER\"}",
+    "--enable-chunked-prefill",
+    "--no-enable-prefix-caching",
+    "--gpu-memory-utilization",
+    "0.9",
+    "--cpu-offload-gb",
+    "0",
+    "--kv-cache-dtype",
+    "auto",
+    "--max-logprobs",
+    "1",
+    "--no-enable-log-requests",
+    "--worker-extension-cls",
+    "quality_reap_loader.QualityReapAudit",
+    "--compilation-config",
+    "{\"cudagraph_mode\":\"FULL_AND_PIECEWISE\"}",
+    "--language-model-only",
+    "--mamba-cache-dtype",
+    "float32",
+    "--mamba-ssm-cache-dtype",
+    "float32",
+    "--gdn-prefill-backend",
+    "triton"
+  ],
+  "started_at": "2026-10-29T06:14:11.694023+00:00",
+  "runtime": {
+    "gpu": {
+      "uuid": "GPU-c3276b96-6ac1-8301-007b-7f01470d8e3f",
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "total_mib": 97887,
+      "capability": 12.0,
+      "driver": "580.95.05"
+    },
+    "profile": [
+      4,
+      8192,
+      0.9,
+      false
+    ],
+    "versions": {
+      "vllm": "0.32.0",
+      "torch": "2.13.0",
+      "transformers": "5.19.0"
+    },
+    "engine": "FLASHINFER",
+    "quantized_backend": "marlin",
+    "code": {
+      "quality_server.py": "604ca6ba4c5f5c3301c20d3d48e9d50a7e63f0318517b67a4171d9bd8262e5e3",
+      "quality_audit.py": "0e61a5ccdf047d45d83a2b5e355c983e9a040cbe1851c7378329bcf1b7d30a1e",
+      "quality_code_worker.py": "2925ca0e65675c557efdea2f92e4813b47560d5436acecd9060914870ded84b0",
+      "marlin_order.py": "97e59e00176900727933991044f97132a88ef200ccc884da87e1e41e0c728e0a",
+      "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "quality_reap_loader.py": "b3bcad4ac3fc632e6e8a4e4b46b2d25fc46dbc74510457edbb54b58885f172c2",
+      "quality_bfcl.py": "19187d498326b790379f3bfb0d77bfd2d60ad2bd6183a738045c5055783ee1ef",
+      "quality_eval.py": "9ee8af82b96f0877a5e7710e26eeb8eb47b60f2c4e3f6f3a1ccd4e0d0ef7b5a5",
+      "quality_code_eval.py": "7454be1bdbffb58a5fecc36f6ae3b106959d52773742c7321d699758d2985586"
+    },
+    "server_code": "dd360eb1a102b35f00c2e2fdcc45676b2e3955b85382a84fcba22ee532b84479"
+  },
+  "benchmark_identity": {
+    "model": "qwen3_6_35b",
+    "configuration": "E",
+    "checkpoint": {
+      "repo": "RangerX/Qwen3.6-35B-REAP-Pruned-ratio-0.2",
+      "revision": "3df0df7fcc715b6b1e59d4a61bebf101dad2d676",
+      "experts": 205
+    },
+    "tokenizer": {
+      "repo": "Qwen/Qwen3.6-35B-A3B",
+      "revision": "995ad96eacd98c81ed38be0c5b274b04031597b0",
+      "experts": 256
+    }
+  }
+}

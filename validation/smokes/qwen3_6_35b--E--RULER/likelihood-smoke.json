@@ -1,0 +1,129 @@
+{
+  "id": "cmpl-a5881ad09196d89b",
+  "object": "text_completion",
+  "created": 1793254519,
+  "model": "quality-model",
+  "choices": [
+    {
+      "index": 0,
+      "text": "One plus one is two.\n",
+      "logprobs": {
+        "text_offset": [
+          0,
+          3,
+          8,
+          12,
+          15,
+          19,
+          20
+        ],
+        "token_logprobs": [
+          null,
+          -8.641214370727539,
+          -1.6812645196914673,
+          -1.274993896484375,
+          -1.30154550075531,
+          -1.193341612815857,
+          -1.7128803730010986
+        ],
+        "tokens": [
+          "One",
+          " plus",
+          " one",
+          " is",
+          " two",
+          ".",
+          "\n"
+        ],
+        "top_logprobs": [
+          null,
+          {
+            " plus": -8.641214370727539,
+            " of": -0.5787140130996704
+          },
+          {
+            " one": -1.6812645196914673,
+            " two": -1.4937645196914673
+          },
+          {
+            " is": -1.274993896484375
+          },
+          {
+            " two": -1.30154550075531
+          },
+          {
+            ".": -1.193341612815857
+          },
+          {
+            "\n": -1.7128803730010986
+          }
+        ]
+      },
+      "finish_reason": "length",
+      "stop_reason": null,
+      "token_ids": null,
+      "prompt_logprobs": [
+        null,
+        {
+          "5346": {
+            "logprob": -8.641214370727539,
+            "rank": 267,
+            "decoded_token": " plus"
+          },
+          "314": {
+            "logprob": -0.5787140130996704,
+            "rank": 1,
+            "decoded_token": " of"
+          }
+        },
+        {
+          "799": {
+            "logprob": -1.6812645196914673,
+            "rank": 2,
+            "decoded_token": " one"
+          },
+          "1330": {
+            "logprob": -1.4937645196914673,
+            "rank": 1,
+            "decoded_token": " two"
+          }
+        },
+        {
+          "369": {
+            "logprob": -1.274993896484375,
+            "rank": 1,
+            "decoded_token": " is"
+          }
+        },
+        {
+          "1330": {
+            "logprob": -1.30154550075531,
+            "rank": 1,
+            "decoded_token": " two"
+          }
+        },
+        {
+          "13": {
+            "logprob": -1.193341612815857,
+            "rank": 1,
+            "decoded_token": "."
+          }
+        }
+      ],
+      "prompt_token_ids": null,
+      "routed_experts": null
+    }
+  ],
+  "service_tier": null,
+  "system_fingerprint": "vllm-0.32.0-4d093811",
+  "usage": {
+    "prompt_tokens": 6,
+    "total_tokens": 7,
+    "completion_tokens": 1,
+    "prompt_tokens_details": null,
+    "completion_tokens_details": null
+  },
+  "kv_transfer_params": null,
+  "ec_transfer_params": null,
+  "metrics": null
+}

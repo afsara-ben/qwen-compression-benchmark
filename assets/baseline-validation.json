@@ -1,0 +1,54 @@
+[
+  {
+    "model": "qwen3_30b",
+    "workload": "GSM8K",
+    "baseline_summary_sha256": "86969e729e74ac8adb07efde26b271419e4932182482b39ca50ff939b1375da0",
+    "matched_reference_summary_sha256": "2f531671d87dea4f69019e815dedaf8a05eb264caf0cb04bcd1027dcac2823d2",
+    "baseline_samples_sha256": "4c9154c31b8ac84684b984448b987b6164f45cc7024ac7fd6559240ff7cf877e",
+    "reference_samples_sha256": "9df066ea403b565927b57963fa75270a55b5eefe6a5c72ecc84034cc4fd09383",
+    "checks": [
+      "identical task config excluding filesystem metadata",
+      "identical doc IDs, full documents, targets and rendered generation arguments",
+      "seed 17 and full sample counts"
+    ]
+  },
+  {
+    "model": "qwen3_30b",
+    "workload": "IFEval",
+    "baseline_summary_sha256": "d839e274823f068d0fc7884a048e5791cabddcdc5a66f5989fc79233c5189a4e",
+    "matched_reference_summary_sha256": "fe01f83e257af179617d43c34cc1494164042fcbfc799fe3f188c41f81314e1e",
+    "baseline_samples_sha256": "625f0f4fab9fd8f9135c8dbf750ea10dfa86e8f7530b9b8dbfa0e490da536e58",
+    "reference_samples_sha256": "8ef91fe213d4a464afaaf419a31aad8e1751d7dd24efb95fe9a2ae370b165961",
+    "checks": [
+      "identical task config excluding filesystem metadata",
+      "identical doc IDs, full documents, targets and rendered generation arguments",
+      "seed 17 and full sample counts"
+    ]
+  },
+  {
+    "model": "qwen3_6_35b",
+    "workload": "GSM8K",
+    "baseline_summary_sha256": "d68091ecbd86daeff508c6fdd65897c72572aa6d5329b9563b853500595ece65",
+    "matched_reference_summary_sha256": "9e8b98538e19b4fdd1bbb0937f3af643d5bdd4abb863f9867e4bacfada7d441b",
+    "baseline_samples_sha256": "b5de50e5d41ed0c0953a35fd16076bf5602d82da7d4d1aee0a80a47fe5a273d4",
+    "reference_samples_sha256": "3cb5a9ca8d7d92e9c3d565cbc8d86e42096d4d697a0839f6170fc1685d1ac4c1",
+    "checks": [
+      "identical task config excluding filesystem metadata",
+      "identical doc IDs, full documents, targets and rendered generation arguments",
+      "seed 17 and full sample counts"
+    ]
+  },
+  {
+    "model": "qwen3_6_35b",
+    "workload": "IFEval",
+    "baseline_summary_sha256": "25d099fbe20c2cdfe57e699b266af36b038afa89754a15c3450e1a75c3864735",
+    "matched_reference_summary_sha256": "a4b940e8acbf8a88756b68bc6f26659eace3dcd0d6339200a36942d2c75cbd24",
+    "baseline_samples_sha256": "66605a86f3b8b7f1f95175caa7fe6b681aed44d865238d566f692bf0442a516f",
+    "reference_samples_sha256": "cc01cc2d571a3627b53dcccbef9cd6aa8315242f946fc4a3574a2ab4eee1b599",
+    "checks": [
+      "identical task config excluding filesystem metadata",
+      "identical doc IDs, full documents, targets and rendered generation arguments",
+      "seed 17 and full sample counts"
+    ]
+  }
+]

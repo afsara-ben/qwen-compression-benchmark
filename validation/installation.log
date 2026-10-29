@@ -1,0 +1,32 @@
++ /scratch/hys4qm/qbench-runtime/tools/uv python install 3.12.15
+Python 3.12.15 is already installed
++ /scratch/hys4qm/qbench-runtime/tools/uv pip install --python /scratch/hys4qm/qbench-runtime/venv/bin/python --constraint /u/hys4qm/qwen-compression-benchmark/locks/runtime-constraints.txt -r /u/hys4qm/qwen-compression-benchmark/locks/runtime-requirements.txt -e /scratch/hys4qm/qbench-runtime/sources/lm_eval[api,ruler,ifeval] -e /u/hys4qm/qwen-compression-benchmark
+Using Python 3.12.15 environment at: /scratch/hys4qm/qbench-runtime/venv
+Resolved 239 packages in 216ms
+   Building lm-eval @ file:///scratch/hys4qm/qbench-runtime/sources/lm_eval
+   Building qwen-compression-benchmark @ file:///u/hys4qm/qwen-compression-benchmark
+      Built qwen-compression-benchmark @ file:///u/hys4qm/qwen-compression-benchmark
+      Built lm-eval @ file:///scratch/hys4qm/qbench-runtime/sources/lm_eval
+Prepared 2 packages in 2.57s
+Uninstalled 2 packages in 3ms
+Installed 2 packages in 2ms
+ ~ lm-eval==0.4.14.dev0 (from file:///scratch/hys4qm/qbench-runtime/sources/lm_eval)
+ ~ qwen-compression-benchmark==1.0.0 (from file:///u/hys4qm/qwen-compression-benchmark)
++ /scratch/hys4qm/qbench-runtime/tools/uv pip install --python /scratch/hys4qm/qbench-runtime/bfcl-venv/bin/python --constraint /u/hys4qm/qwen-compression-benchmark/locks/bfcl-constraints.txt -e /scratch/hys4qm/qbench-runtime/sources/bfcl/berkeley-function-call-leaderboard
+Using Python 3.12.15 environment at: /scratch/hys4qm/qbench-runtime/bfcl-venv
+Resolved 113 packages in 1.29s
+   Building bfcl-eval @ file:///scratch/hys4qm/qbench-runtime/sources/bfcl/berkeley-function-call-leaderboard
+      Built bfcl-eval @ file:///scratch/hys4qm/qbench-runtime/sources/bfcl/berkeley-function-call-leaderboard
+Prepared 1 package in 406ms
+Uninstalled 1 package in 1ms
+Installed 1 package in 1ms
+ ~ bfcl-eval==0.0.0.dev0 (from file:///scratch/hys4qm/qbench-runtime/sources/bfcl/berkeley-function-call-leaderboard)
++ /scratch/hys4qm/qbench-runtime/venv/bin/python -c import vllm, torch, transformers, lm_eval; assert vllm.__version__ == '0.32.0'; print(torch.__version__, transformers.__version__)
+2.13.0+cu130 5.19.0
++ /scratch/hys4qm/qbench-runtime/bfcl-venv/bin/python -c from bfcl_eval.constants.category_mapping import VERSION_PREFIX; assert VERSION_PREFIX == 'BFCL_v3'
++ /scratch/hys4qm/qbench-runtime/tools/uv pip freeze --python /scratch/hys4qm/qbench-runtime/venv/bin/python
+Using Python 3.12.15 environment at: /scratch/hys4qm/qbench-runtime/venv
++ /scratch/hys4qm/qbench-runtime/tools/uv pip freeze --python /scratch/hys4qm/qbench-runtime/bfcl-venv/bin/python
+Using Python 3.12.15 environment at: /scratch/hys4qm/qbench-runtime/bfcl-venv
+(PosixPath('/scratch/hys4qm/qbench-runtime/venv/bin/python'), PosixPath('/scratch/hys4qm/qbench-runtime/bfcl-venv/bin/python'))
+(PosixPath('/scratch/hys4qm/qbench-runtime/venv/bin/python'), PosixPath('/scratch/hys4qm/qbench-runtime/bfcl-venv/bin/python'))
